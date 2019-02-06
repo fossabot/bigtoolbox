@@ -227,7 +227,7 @@ public class Directory implements Entry
 			{
 				if(verbose && currentLargestFile.hasNoContents())
 				{
-					System.out.println("Sent a getlargest() with no contents from " + thisDirectory.getName() + " to " + i.getName());
+					System.out.println("Sent a getLargest() with no contents from " + thisDirectory.getName() + " to " + i.getName());
 				}
 				Record largestInDirectory = getLargestFile(i.asDirectory(), currentLargestFile);
 				if(verbose)
@@ -253,7 +253,7 @@ public class Directory implements Entry
 			{
 				if(verbose && currentLargestFile.hasNoContents())
 				{
-					System.out.println("Sent a getlargest() with no contents from " + thisDirectory.getName() + " to " + i.getName());
+					System.out.println("Sent a getLargest() with no contents from " + thisDirectory.getName() + " to " + i.getName());
 				}
 				if(verbose)
 				{
