@@ -120,8 +120,8 @@ public class Directory implements Entry
 		foundExcludedFiles = new ArrayList<>();
 		contents = new ArrayList<>();
 
-		File localContents[] = thisDirectory.listFiles();
-		for(File i : localContents)
+		File[] localContents = thisDirectory.listFiles();
+		for(File i : (localContents != null) ? localContents : new File[0])
 		{
 			if(i.isDirectory())
 			{
