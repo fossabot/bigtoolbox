@@ -7,45 +7,95 @@ import java.io.FileNotFoundException;
  * This class represents a file within a Directory.
  * This class is named Record to avoid conflicts with Java's own File class.
  */
-public class Record
-{
+public class Record implements Entry
+{    // TODO Add a String getSuffix() to determine B, KB, MB, GB, etc
+	// TODO Add a String that nicely formats the size with spaces and commas and adds suffix
+	// TODO Add various hashing techniques
+	// TODO Add a compare function that uses hashing
+
 	private File thisFile;
+	private boolean hasNoContents = false;
 
-
-	public Record(String filename) throws FileNotFoundException
+	public Record()
 	{
-		new Record(new File(filename));
+		thisFile = null;
+		hasNoContents = true;
 	}
-	public Record(File in) throws FileNotFoundException
+
+	public Record(String filename)
 	{
-		if(in.exists())
+		this(new File(filename));
+	}
+
+	public Record(File in)
+	{
+		if(in == null)
 		{
-			if(thisFile.isFile())
+			try
+			{
+				throw new FileNotFoundException("File doesn't exist!");
+			}
+			catch(FileNotFoundException e)
+			{
+				e.printStackTrace();
+			}
+		}
+		else if(in.exists())
+		{
+			if(in.isFile())
 			{
 				thisFile = in;
 			}
-			else{
-				throw new FileNotFoundException("File exists but isn't a file!");
+			else
+			{
+				try
+				{
+					throw new FileNotFoundException("File exists but isn't a file!");
+				}
+				catch(FileNotFoundException e)
+				{
+					e.printStackTrace();
+				}
 			}
 		}
-		else{
-			throw new FileNotFoundException("File doesn't exist!");
+	}
+
+	public long getSize()
+	{
+		if(thisFile != null)
+		{
+			return thisFile.length();
+		}
+		else
+		{
+			return 0;
 		}
 	}
-	public long getSize(){
 
-	}
-	public String sizeString()
+	/**
+	 * @return a Record if this is a Record or an empty Record if this is not a Record
+	 */
+	@Override
+	public Record asRecord()
 	{
-		return sizeString(false,false);
+		return this;
 	}
-	public String sizeString(boolean createSpaces, boolean addPunctuation)
+
+	@Override
+	public Directory asDirectory()
 	{
-		return sizeString(createSpaces,addPunctuation,",");
+		return new Directory();
 	}
-	public String sizeString(boolean createSpaces, boolean addPunctuation, String punctuation)
+
+	@Override
+	public boolean hasNoContents()
 	{
-		//TODO add implementation
-		return null;
+		return hasNoContents;
+	}
+
+	@Override
+	public String getName()
+	{
+		return thisFile.getName();
 	}
 }

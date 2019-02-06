@@ -1,4 +1,4 @@
-package com.IncPlusPlus.math.DifferentialAndIntegratedCalculus;
+package com.IncPlusPlus.MyCustomUtils.math.DifferentialAndIntegratedCalculus;
 
 import org.junit.jupiter.api.Test;
 

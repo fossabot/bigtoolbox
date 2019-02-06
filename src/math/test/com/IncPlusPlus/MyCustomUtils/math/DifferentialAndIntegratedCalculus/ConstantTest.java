@@ -1,4 +1,4 @@
-package com.IncPlusPlus.math.DifferentialAndIntegratedCalculus;
+package com.IncPlusPlus.MyCustomUtils.math.DifferentialAndIntegratedCalculus;
 
 import org.junit.jupiter.api.Test;
 
@@ -43,25 +43,25 @@ class ConstantTest
 	void getFormulaRepresentation()
 	{
 		Constant testConstant = new Constant(new BigDecimal(posVal));
-		assertTrue(testConstant.getFormulaRepresentation().equals("50"));
+		assertEquals("50", testConstant.getFormulaRepresentation());
 
 		testConstant = new Constant(new BigDecimal(zeroVal));
-		assertTrue(testConstant.getFormulaRepresentation().equals(""));
+		assertEquals("", testConstant.getFormulaRepresentation());
 
 		testConstant = new Constant(new BigDecimal(negVal));
-		assertTrue(testConstant.getFormulaRepresentation().equals("(-50)"));
+		assertEquals("(-50)", testConstant.getFormulaRepresentation());
 	}
 
 	@Test
 	void getIntegratedRepresentation()
 	{
 		Constant testConstant = new Constant(new BigDecimal(posVal));
-		assertTrue(testConstant.getIntegratedRepresentation().equals("50x"));
+		assertEquals("50x", testConstant.getIntegratedRepresentation());
 
 		testConstant = new Constant(new BigDecimal(zeroVal));
-		assertTrue(testConstant.getIntegratedRepresentation().equals(""));
+		assertEquals("", testConstant.getIntegratedRepresentation());
 
 		testConstant = new Constant(new BigDecimal(negVal));
-		assertTrue(testConstant.getIntegratedRepresentation().equals("(-50x)"));
+		assertEquals("(-50x)", testConstant.getIntegratedRepresentation());
 	}
 }

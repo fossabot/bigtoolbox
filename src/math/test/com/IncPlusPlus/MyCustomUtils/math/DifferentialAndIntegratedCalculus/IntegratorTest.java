@@ -1,4 +1,4 @@
-package com.IncPlusPlus.math.DifferentialAndIntegratedCalculus;
+package com.IncPlusPlus.MyCustomUtils.math.DifferentialAndIntegratedCalculus;
 
 import org.junit.jupiter.api.Test;
 
@@ -34,7 +34,7 @@ class IntegratorTest
 	@Test
 	void exactValue()
 	{
-		assertTrue(Lily.exactValue().compareTo(new BigDecimal("500.0006E+6")) == 0);
+		assertEquals(0, Lily.exactValue().compareTo(new BigDecimal("500.0006E+6")));
 	}
 
 	@Test

@@ -1,8 +1,8 @@
-package com.IncPlusPlus.math;
+package com.IncPlusPlus.MyCustomUtils.math;
 
 import java.math.BigDecimal;
 import java.util.Scanner;
-import com.IncPlusPlus.math.DifferentialAndIntegratedCalculus.*;
+import com.IncPlusPlus.MyCustomUtils.math.DifferentialAndIntegratedCalculus.*;
 
 /**
  * @author Ryan Cloherty
