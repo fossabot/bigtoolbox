@@ -10,6 +10,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/MyCustomUtils/pom.xml" />
+        <option value="$PROJECT_DIR$/src/pom.xml" />
       </set>
     </option>
   </component>
