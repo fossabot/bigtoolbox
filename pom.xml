@@ -6,7 +6,7 @@
     <artifactId>MyCustomUtils</artifactId>
     <version>${revision}</version>
     <properties>
-        <revision>0.1-SNAPSHOT</revision>
+        <revision>0.0.1</revision>
     </properties>
     <packaging>pom</packaging>
     <name>My Custom Utilities</name>
