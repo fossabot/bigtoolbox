@@ -5,11 +5,11 @@
     <parent>
         <groupId>com.IncPlusPlus.MyCustomUtils</groupId>
         <artifactId>MyCustomUtils</artifactId>
-        <version>0.1-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
     <artifactId>src</artifactId>
     <packaging>pom</packaging>
-    <version>0.1-SNAPSHOT</version>
+    <version>${revision}</version>
     <name>My Custom Utilities</name>
 
     <modules>
