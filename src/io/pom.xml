@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.IncPlusPlus.MyCustomUtils</groupId>
         <artifactId>src</artifactId>
-        <version>0.1-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
     <artifactId>io</artifactId>
     <packaging>pom</packaging>
