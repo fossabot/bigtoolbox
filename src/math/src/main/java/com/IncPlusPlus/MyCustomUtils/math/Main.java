@@ -9,7 +9,8 @@ import com.IncPlusPlus.MyCustomUtils.math.DifferentialAndIntegratedCalculus.*;
  */
 public class Main
 {
-	//TODO add more functions and terms
+	//TODO remove this from MyCustomUtils
+	//  after figuring out why the heck I put it here in the first place
 	public static void main(String[] args)
 	{
 		Scanner in = new Scanner(System.in);

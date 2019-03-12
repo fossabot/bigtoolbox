@@ -7,11 +7,17 @@ import java.io.FileNotFoundException;
  * This class represents a file within a Directory.
  * This class is named Record to avoid conflicts with Java's own File class.
  */
-public class Record implements Entry
-{    // TODO Add a String getSuffix() to determine B, KB, MB, GB, etc
-	// TODO Add a String that nicely formats the size with spaces and commas and adds suffix
-	// TODO Add various hashing techniques
-	// TODO Add a compare function that uses hashing
+public class Record extends Entry
+{
+	/*
+	 * TODO Add various hashing/checksum techniques
+	 * TODO Add a compare function that uses hashing
+	 * TODO Implement some kind of warning system IF the user is on Windows
+	 *  Maybe check for registry (and/or group policy) entry that expands path length
+	 *  It would likely be good to have this be part of a VERBOSE flag
+	 *  See https://www.howtogeek.com/266621/how-to-make-windows-10-accept-file-paths-over-260-characters/
+	 *  Also see https://docs.microsoft.com/en-us/windows/desktop/fileio/naming-a-file
+	 */
 
 	private File thisFile;
 	private boolean hasNoContents = false;

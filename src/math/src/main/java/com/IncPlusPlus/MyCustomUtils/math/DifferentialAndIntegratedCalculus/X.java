@@ -8,6 +8,7 @@ import java.math.BigDecimal;
 public class X extends Term
 {
 	/* TODO make sure that the case of the integration where n+1 would equal zero gets accounted for.
+	 *  answer would be ln(abs(x)) or something like that
 	 * Make the integral be ln(abs(x_var)) instead of (1/(n+1))(coef)x^(n+1)
 	 */
 

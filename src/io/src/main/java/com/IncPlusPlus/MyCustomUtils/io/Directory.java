@@ -7,7 +7,7 @@ import java.util.Arrays;
 /**
  * This class represents a single directory (A.K.A. a folder)
  */
-public class Directory implements Entry
+public class Directory extends Entry
 {
 	// TODO add verbosity option to indexing method
 	// TODO Add a function to grab the smallest and largest of the files scanned

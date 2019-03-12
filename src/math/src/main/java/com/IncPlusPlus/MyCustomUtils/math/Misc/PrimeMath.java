@@ -2,6 +2,7 @@ package com.IncPlusPlus.MyCustomUtils.math.Misc;
 
 import java.util.ArrayList;
 
+//todo Add prime number generators including Sieve of Eratosthenes
 public class PrimeMath
 {
 	/**
