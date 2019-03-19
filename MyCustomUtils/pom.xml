@@ -9,7 +9,6 @@
     </parent>
     <artifactId>MyCustomUtils</artifactId>
     <packaging>pom</packaging>
-    <version>${revision}</version>
     <name>My Custom Utilities</name>
 
 
