@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.IncPlusPlus.MyCustomUtils</groupId>
-        <artifactId>src</artifactId>
+        <artifactId>MyCustomUtils</artifactId>
         <version>${revision}</version>
     </parent>
     <artifactId>io</artifactId>
