@@ -3,17 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.IncPlusPlus.MyCustomUtils</groupId>
-    <artifactId>MyCustomUtils</artifactId>
+    <artifactId>parent</artifactId>
     <version>${revision}</version>
     <properties>
-        <revision>1.0.10</revision>
-        <!-- plugins -->
-        <maven.assembly.plugin.version>2.4</maven.assembly.plugin.version>
-        <!-- dependencies -->
-        <dep.version>1.0-SNAPSHOT</dep.version>
+        <revision>1.0.11</revision>
     </properties>
     <packaging>pom</packaging>
-    <name>My Custom Utilities</name>
+    <name>My Custom Utilities Parent</name>
     <modules>
         <module>src</module>
     </modules>
@@ -30,33 +26,5 @@
                 <artifactId>maven-assembly-plugin</artifactId>
             </plugin>
         </plugins>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-assembly-plugin</artifactId>
-                    <version>${maven.assembly.plugin.version}</version>
-                    <configuration>
-                        <descriptorRefs>
-                            <descriptorRef>jar-with-dependencies</descriptorRef>
-                        </descriptorRefs>
-                        <archive>
-                            <manifest>
-                                <mainClass>com.IncPlusPlus.MyCustomUtils</mainClass>
-                            </manifest>
-                        </archive>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>make-assembly</id>
-                            <phase>package</phase>
-                            <goals>
-                                <goal>single</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-            </plugins>
-        </pluginManagement>
     </build>
 </project>
