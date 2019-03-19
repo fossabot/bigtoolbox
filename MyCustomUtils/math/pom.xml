@@ -11,7 +11,6 @@
         <version>${revision}</version>
     </parent>
     <artifactId>math</artifactId>
-    <packaging>jar</packaging>
     <name>My Custom Utilities: Math</name>
 
     <build>
