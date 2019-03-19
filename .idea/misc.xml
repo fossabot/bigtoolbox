@@ -5,11 +5,11 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/io/pom.xml" />
+        <option value="$PROJECT_DIR$/MyCustomUtils/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/MyCustomUtils/pom.xml" />
         <option value="$PROJECT_DIR$/src/pom.xml" />
       </set>
     </option>

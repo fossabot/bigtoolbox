@@ -3,8 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/My Custom Utils.iml" filepath="$PROJECT_DIR$/My Custom Utils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/io/io.iml" filepath="$PROJECT_DIR$/src/io/io.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/math/math.iml" filepath="$PROJECT_DIR$/src/math/math.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyCustomUtils/MyCustomUtils.iml" filepath="$PROJECT_DIR$/MyCustomUtils/MyCustomUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyCustomUtils/io/io.iml" filepath="$PROJECT_DIR$/MyCustomUtils/io/io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyCustomUtils/math/math.iml" filepath="$PROJECT_DIR$/MyCustomUtils/math/math.iml" />
     </modules>
   </component>
 </project>
