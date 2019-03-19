@@ -6,7 +6,7 @@
     <artifactId>MyCustomUtils</artifactId>
     <version>${revision}</version>
     <properties>
-        <revision>1.0.8</revision>
+        <revision>1.0.9</revision>
         <!-- plugins -->
         <maven.assembly.plugin.version>2.4</maven.assembly.plugin.version>
         <!-- dependencies -->

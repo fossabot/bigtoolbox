@@ -8,7 +8,7 @@
         <version>${revision}</version>
     </parent>
     <artifactId>src</artifactId>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <version>${revision}</version>
     <name>My Custom Utilities Source</name>
 
