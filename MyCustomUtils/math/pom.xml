@@ -12,6 +12,7 @@
     </parent>
     <artifactId>math</artifactId>
     <name>My Custom Utilities: Math</name>
+    <packaging>jar</packaging>
 
     <build>
         <finalName>math</finalName>
