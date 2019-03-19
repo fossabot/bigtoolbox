@@ -10,7 +10,7 @@
     <artifactId>src</artifactId>
     <packaging>pom</packaging>
     <version>${revision}</version>
-    <name>My Custom Utilities</name>
+    <name>My Custom Utilities Source</name>
 
     <modules>
         <module>io</module>
