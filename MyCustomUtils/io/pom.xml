@@ -5,11 +5,12 @@
     <parent>
         <groupId>com.IncPlusPlus.MyCustomUtils</groupId>
         <artifactId>MyCustomUtils</artifactId>
-        <version>${revision}</version>
+        <version>1.0.17</version>
     </parent>
-    <packaging>jar</packaging>
     <artifactId>io</artifactId>
     <name>My Custom Utilities: IO</name>
+    <packaging>jar</packaging>
+    <version>1.0.17</version>
 
     <build>
         <finalName>io</finalName>
