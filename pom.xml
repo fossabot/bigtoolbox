@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.IncPlusPlus.MyCustomUtils</groupId>
     <artifactId>parent</artifactId>
-    <version>1.0.23</version>
+    <version>1.0.24</version>
     <packaging>pom</packaging>
     <name>My Custom Utilities Parent</name>
     <modules>
