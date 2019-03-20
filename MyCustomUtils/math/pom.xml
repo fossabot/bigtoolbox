@@ -6,11 +6,11 @@
     <parent>
         <groupId>com.IncPlusPlus.MyCustomUtils</groupId>
         <artifactId>MyCustomUtils</artifactId>
-        <version>1.0.22</version>
+        <version>1.0.23</version>
     </parent>
     <artifactId>math</artifactId>
     <name>My Custom Utilities: Math</name>
-    <version>1.0.22</version>
+    <version>1.0.23</version>
     <packaging>jar</packaging>
 
     <build>
@@ -61,6 +61,9 @@
             <version>2.0.1</version>
         </dependency>
     </dependencies>
-
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
 
 </project>
