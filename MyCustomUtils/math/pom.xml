@@ -6,11 +6,11 @@
     <parent>
         <groupId>com.IncPlusPlus.MyCustomUtils</groupId>
         <artifactId>MyCustomUtils</artifactId>
-        <version>1.0.21</version>
+        <version>1.0.22</version>
     </parent>
     <artifactId>math</artifactId>
     <name>My Custom Utilities: Math</name>
-    <version>1.0.21</version>
+    <version>1.0.22</version>
     <packaging>jar</packaging>
 
     <build>
