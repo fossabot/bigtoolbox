@@ -1,8 +1,7 @@
-package com.IncPlusPlus.MyCustomUtils.io;
+package com.IncPlusPlus.MyCustomUtils.io.filesys;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * This class represents a single directory (A.K.A. a folder)
