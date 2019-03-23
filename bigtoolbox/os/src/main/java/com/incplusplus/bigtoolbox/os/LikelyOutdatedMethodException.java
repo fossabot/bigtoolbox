@@ -7,12 +7,12 @@ public class LikelyOutdatedMethodException extends RuntimeException
 			"Further details: ";
 
 	/**
-	 * the methods that depend on very specific strings given from the OS may
+	 * A method that depends on very specific strings given from the OS may
 	 * receive a different format than expected and would
 	 * not know how to parse that string properly.
 	 * This can and likely will be caused by the OS receiving an update that
 	 * changes the expected string format.
-	 * @param outdatedMethodLocation
+	 * @param outdatedMethodLocation The package and name of the method that threw this exception
 	 */
 	public LikelyOutdatedMethodException(String outdatedMethodLocation)
 	{
