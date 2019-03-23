@@ -49,8 +49,12 @@ public class Windows extends OperatingSystem
 		{
 			throw new LikelyOutdatedMethodException(getClass().getPackage().toString(),getClass().toString(),getClass().getEnclosingMethod().getName());
 		}
-		String[] splitBuildText =build.split("(Microsoft Windows \\[Version )(\\d+\\.\\d+\\.)");
-		build = splitBuildText[1].substring(0,splitBuildText[1].length()-1);
+		String[] splitBuildText =build.split("(\\.)|(\\])");
+		StringBuilder buildBuilder = new StringBuilder(splitBuildText[2].length()+splitBuildText[3].length());
+		buildBuilder.append(splitBuildText[2]);
+		buildBuilder.append(".");
+		buildBuilder.append(splitBuildText[3]);
+		build = buildBuilder.toString();
 		buildNumber = build;
 		return buildNumber;
 	}
