@@ -7,10 +7,10 @@ public class LikelyOutdatedMethodException extends RuntimeException
 			"Thrown from method";
 
 	/**
-	 * A method that depends on very specific strings given from the OS may
+	 * A method that depends on very specific strings given from the OSFamily may
 	 * receive a different format than expected and would
 	 * not know how to parse that string properly.
-	 * This can and likely will be caused by the OS receiving an update that
+	 * This can and likely will be caused by the OSFamily receiving an update that
 	 * changes the expected string format.
 	 * @param culpritPackage The package this was thrown from
 	 * @param culpritClass The class this was thrown from
