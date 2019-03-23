@@ -4,11 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Big Tool Box.iml" filepath="$PROJECT_DIR$/.idea/Big Tool Box.iml" />
       <module fileurl="file://$PROJECT_DIR$/bigtoolbox/bigtoolbox.iml" filepath="$PROJECT_DIR$/bigtoolbox/bigtoolbox.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bigtoolbox/bigtoolbox.iml" filepath="$PROJECT_DIR$/bigtoolbox/bigtoolbox.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bigtoolbox/io/io.iml" filepath="$PROJECT_DIR$/bigtoolbox/io/io.iml" />
       <module fileurl="file://$PROJECT_DIR$/bigtoolbox/io/io.iml" filepath="$PROJECT_DIR$/bigtoolbox/io/io.iml" />
       <module fileurl="file://$PROJECT_DIR$/bigtoolbox/math/math.iml" filepath="$PROJECT_DIR$/bigtoolbox/math/math.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bigtoolbox/math/math.iml" filepath="$PROJECT_DIR$/bigtoolbox/math/math.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigtoolbox/network/network.iml" filepath="$PROJECT_DIR$/bigtoolbox/network/network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigtoolbox/os/os.iml" filepath="$PROJECT_DIR$/bigtoolbox/os/os.iml" />
     </modules>
   </component>
 </project>

@@ -16,6 +16,8 @@
     <modules>
         <module>io</module>
         <module>math</module>
+        <module>network</module>
+        <module>os</module>
     </modules>
 
     <build>
