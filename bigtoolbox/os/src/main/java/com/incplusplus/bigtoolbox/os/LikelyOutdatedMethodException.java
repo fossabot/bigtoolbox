@@ -4,7 +4,7 @@ public class LikelyOutdatedMethodException extends RuntimeException
 {
 	private static String cause = "A method that was called is in an unexpected state. \n" +
 			"This is likely because the environment the method expects is outdated. \n" +
-			"Thrown from: ";
+			"Thrown from method";
 
 	/**
 	 * A method that depends on very specific strings given from the OS may
@@ -12,10 +12,12 @@ public class LikelyOutdatedMethodException extends RuntimeException
 	 * not know how to parse that string properly.
 	 * This can and likely will be caused by the OS receiving an update that
 	 * changes the expected string format.
-	 * @param outdatedMethodLocation The package and name of the method that threw this exception
+	 * @param culpritPackage The package this was thrown from
+	 * @param culpritClass The class this was thrown from
+	 * @param culpritMethod The method this was thrown from
 	 */
-	public LikelyOutdatedMethodException(String outdatedMethodLocation)
+	public LikelyOutdatedMethodException(String culpritPackage, String culpritClass, String culpritMethod)
 	{
-		super(cause + outdatedMethodLocation);
+		super(String.format("%s %s in class %s in package %s", cause, culpritMethod, culpritClass, culpritPackage));
 	}
 }
