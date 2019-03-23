@@ -1,4 +1,5 @@
 package com.incplusplus.bigtoolbox.os.opsys;
+
 import org.apache.commons.lang3.SystemUtils;
 
 public abstract class OperatingSystem
@@ -15,7 +16,7 @@ public abstract class OperatingSystem
 		}
 		else if(SystemUtils.IS_OS_MAC)
 		{
-			return new MacOS();
+			return new Mac();
 		}
 		else
 		{
