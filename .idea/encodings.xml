@@ -2,9 +2,11 @@
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/MyCustomUtils" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/MyCustomUtils/io" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/MyCustomUtils/math" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigtoolbox" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigtoolbox/io" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigtoolbox/io" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigtoolbox/math" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigtoolbox/math" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
