@@ -1,4 +1,4 @@
-package com.IncPlusPlus.MyCustomUtils.io;
+package com.IncPlusPlus.MyCustomUtils.io.filesys;
 
 public abstract class Entry
 {
