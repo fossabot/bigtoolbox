@@ -11,10 +11,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Big Tool Box" target="1.5" />
+      <module name="bigtoolbox" target="1.8" />
       <module name="io" target="1.8" />
       <module name="math" target="1.8" />
-      <module name="My Custom Utils" target="1.5" />
-      <module name="MyCustomUtils" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
