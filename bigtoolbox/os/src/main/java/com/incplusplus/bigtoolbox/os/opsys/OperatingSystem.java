@@ -49,6 +49,11 @@ public abstract class OperatingSystem
 		return new Unknown();
 	}
 
+	/*
+	* Instead of having a skeleton os method. All implementing classes will have a noarg constructor
+	* that returns a new instance of the OS of the current machine. They will also have a multi-arg constructor
+	* to create a specific fake instance of that specific OS.
+	*/
 	protected abstract OperatingSystem getSkeletonOS(String releaseName, String OSVersion);
 
 
