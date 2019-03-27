@@ -10,12 +10,14 @@
     <version>1.0.24</version>
     <artifactId>bigtoolbox</artifactId>
     <packaging>pom</packaging>
-    <name>Big Tool Box</name>
+    <name>Big Tool Box Child</name>
 
 
     <modules>
         <module>io</module>
         <module>math</module>
+        <module>network</module>
+        <module>os</module>
     </modules>
 
     <build>
