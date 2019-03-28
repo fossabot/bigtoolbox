@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.incplusplus.bigtoolbox</groupId>
-        <artifactId>parent</artifactId>
+        <artifactId>bigtoolbox</artifactId>
         <version>1.0.24</version>
     </parent>
     <version>1.0.24</version>
-    <artifactId>bigtoolbox</artifactId>
+    <artifactId>child</artifactId>
     <packaging>pom</packaging>
     <name>Big Tool Box Child</name>
 
