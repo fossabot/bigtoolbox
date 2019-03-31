@@ -57,7 +57,7 @@ public class Windows_10 extends Windows
 		}
 		if(! build.matches("(Microsoft Windows \\[Version )(\\d+\\.\\d+\\.\\d+\\.\\d+\\])"))
 		{
-			throw new LikelyOutdatedMethodException(getClass().getPackage().toString(), getClass().toString(), getClass().getEnclosingMethod().getName());
+			throw new LikelyOutdatedMethodException(getClass());
 		}
 		String[] splitBuildText = build.split("(\\.)|(\\])");
 		StringBuilder buildBuilder = new StringBuilder(splitBuildText[2].length() + splitBuildText[3].length());
