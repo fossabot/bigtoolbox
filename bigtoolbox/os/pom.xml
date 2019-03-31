@@ -10,7 +10,7 @@
     <artifactId>os</artifactId>
     <name>Big Tool Box: OS</name>
     <packaging>jar</packaging>
-    <version>1.0.24</version>
+    <version>1.0.25</version>
 
     <build>
         <finalName>os</finalName>
@@ -52,6 +52,13 @@
             </plugin>
         </plugins>
     </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.0</version>
+        </dependency>
+    </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
