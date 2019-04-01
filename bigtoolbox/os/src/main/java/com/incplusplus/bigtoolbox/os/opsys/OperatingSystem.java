@@ -1,7 +1,7 @@
 package com.incplusplus.bigtoolbox.os.opsys;
 
+import com.incplusplus.bigtoolbox.os.UnsupportedOSException;
 import org.apache.commons.lang3.SystemUtils;
-
 
 
 //TODO Implement Comparable
@@ -9,52 +9,60 @@ public abstract class OperatingSystem
 {
 	public enum OSFamily
 	{
-		Windows,Linux,Mac
+		Windows, Linux, Mac
 	}
+
 	public static OperatingSystem getOS()
 	{
 		if(SystemUtils.IS_OS_WINDOWS)
 		{
-			//return new Windows();
+			if(SystemUtils.IS_OS_WINDOWS_10)
+			{
+				return new Windows_10();
+			}
+			else
+			{
+				throw new UnsupportedOSException();
+			}
 		}
 		else if(SystemUtils.IS_OS_LINUX)
 		{
-			return new Linux();
+			throw new UnsupportedOSException();
 		}
 		else if(SystemUtils.IS_OS_MAC)
 		{
-			return new Mac();
+			throw new UnsupportedOSException();
 		}
-		return new Unknown();
+		throw new UnsupportedOSException();
 	}
-
-	protected abstract OperatingSystem getInstance();
 
 	public abstract String getVersion();
 
-	public OperatingSystem getSkeleton(OSFamily osFamily, String releaseName, String OSVersion)
+	public final OperatingSystem getSkeleton(OSFamily osFamily, String majorVersion, String minorVersion)
 	{
-		if(osFamily.equals("Windows"))
+		return getSkeleton(osFamily,majorVersion,minorVersion,"");
+	}
+
+	public final OperatingSystem getSkeleton(OSFamily osFamily, String majorVersion, String minorVersion, String buildVersion)
+	{
+		if(osFamily.equals(OSFamily.Windows))
 		{
-			return Windows.getSkeletonOS(releaseName,OSVersion);
+			return Windows.getSkeletonOS(majorVersion, minorVersion, buildVersion);
 		}
-		if(osFamily.equals("Linux"))
+		if(osFamily.equals(OSFamily.Linux))
 		{
-			return Linux.getSkeletonOS(releaseName,OSVersion);
+			throw new UnsupportedOSException();
 		}
-		if(osFamily.equals("Mac"))
+		if(osFamily.equals(OSFamily.Mac))
 		{
-			return Mac.getSkeletonOS(releaseName,OSVersion);
+			throw new UnsupportedOSException();
 		}
 		return new Unknown();
 	}
 
 	/*
-	* Instead of having a skeleton os method. All implementing classes will have a noarg constructor
-	* that returns a new instance of the OS of the current machine. They will also have a multi-arg constructor
-	* to create a specific fake instance of that specific OS.
-	*/
-	protected abstract OperatingSystem getSkeletonOS(String releaseName, String OSVersion);
-
-
+	 * The contract for Windows, Linux, and Mac superclasses is that they must have a
+	 * static getSkeletonOS method that returns a subclass with the proper versioning.
+	 */
+	//abstract OperatingSystem getSkeletonOS(String majorVersion, String minorVersion, String buildVersion);
 }

@@ -10,6 +10,9 @@ import java.io.InputStreamReader;
 
 public class Windows_10 extends Windows
 {
+	private int version;
+	private double buildNumber;
+	private boolean isSkeleton;
 	public Windows_10()
 	{
 		super();
@@ -18,17 +21,75 @@ public class Windows_10 extends Windows
 			throw new IncorrectOperatingSystemException();
 		}
 		grabBuildNumber();
+		grabVersionNumber();
+		isSkeleton = false;
 	}
 
-	protected Windows_10(String OSVersion)
+	private Windows_10(String minorVersion, String buildVersion)
 	{
-		this.isSkeleton = true;
-		version = OSVersion;
+		//TODO Implement throwing NoSuchOSException
+		super();
+		try
+		{
+			this.version=Integer.parseInt(minorVersion);
+			this.buildNumber=Double.parseDouble(buildVersion);
+		}
+		catch(NumberFormatException e)
+		{
+			try
+			{
+				throw new Exception("minorVersion for Windows_10 must be an integer!\nmajorVersion for Windows_10 must be an double!");
+			}
+			catch(Exception e1)
+			{
+				e1.printStackTrace();
+			}
+		}
+		this.isSkeleton=true;
 	}
 
-	public String getVersion()
+	public static OperatingSystem getSkeletonOS(String minorVersion, String buildVersion)
 	{
-		return version;
+		return new Windows_10(minorVersion,buildVersion);
+	}
+
+	public String getMajorVersion()
+	{
+		return Integer.toString(version);
+	}
+
+	public String getMinorVersion()
+	{
+		return Double.toString(buildNumber);
+	}
+
+	private void grabVersionNumber()
+	{
+		{
+			String version = "";
+			try
+			{
+				Process p = Runtime.getRuntime().exec("cmd /c powershell -command \"(Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion').ReleaseId\"");
+				p.waitFor();
+				BufferedReader reader = new BufferedReader(
+						new InputStreamReader(p.getInputStream())
+				);
+				String line;
+				while((line = reader.readLine()) != null)
+				{
+					version += line;
+				}
+			}
+			catch(IOException e1)
+			{
+				e1.printStackTrace();
+			}
+			catch(InterruptedException e2)
+			{
+				e2.printStackTrace();
+			}
+			this.version = Integer.parseInt(version);
+		}
 	}
 
 	private void grabBuildNumber()
@@ -65,6 +126,6 @@ public class Windows_10 extends Windows
 		buildBuilder.append(".");
 		buildBuilder.append(splitBuildText[3]);
 		build = buildBuilder.toString();
-		version = build;
+		buildNumber = Double.parseDouble(build);
 	}
 }
