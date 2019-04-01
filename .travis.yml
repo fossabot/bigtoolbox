@@ -1,13 +1,11 @@
 language: java
 jdk:
-  - oraclejdk8
-  - openjdk8
-
+- oraclejdk8
+- openjdk8
 addons:
   sonarcloud:
-    organization: "incplusplus-github" # the key of the org you chose at step #3
+    organization: incplusplus-github
     token:
-      secure: "s+4HxI6dBfljTcpqldl3CBoAA8KIMmAsX8RMnGO7pNHKHPPmXuv4z6tToIIg7GGeygTSWi+Jv5chMcFtTMMODEwu0cACgrQnVTvuflXD4ZJrQBav9VRkOj7HPz0R3BciSajsmL1U4OA718dVUp3TuwUbN8b2ZmwFvfGN6TawELgdCFQ/9xw4oEYv/DdEATSxp1lu93WhO13E7OJUAjEy8PStmmZZVNMZLA86aoas8xJguq3ScoMvEb7FwKUUmxNctr62Pom4jYGaFYsvhlbFTIXkjCIjzXOkfSYRBxIqZZp4SaEKm1OFNPwHzcEXUTW2G+m+xgp6A2dfgHWAVCiMilPmUxv44meLqPU98yxqK5ug4HdUSCSaaGJnOHr+5/wZlQILDEKpCHHDuq6Tj3Fx1MXC/vsf17ima/Tg/Y6Mmn3DbylOWL6aaSbyxOPQf9u7G0OHYRfS2lXFeAjNHqZcGHags+FN3aXycpZuIWOG4Z5fUrQs4yqyG4GLG3U8nOxJXee8Be9B1dyNkcwyzC6ll9yBPRbOTxAfrnv+zaH+iX+153A1qnP0qo/ThYkyuy8+jvewJYcYcpziqNpQUd3POCw7eXHOxCcSAEopJPMOMujshf2ILruRrojq+KkPkP0azi/2/TDvT7lDsa+g5YxocJ60Y9iSLCHK6jqKjS5TE2U=" # encrypted value of your token
+      secure: EBqayX6oQL0ImNWlbZw5ztaGwWPHYNk/cPhTFE6qLgkNVlN+OfaNmIDCmd3OmbetrLZ9uR0OuVtgbEAWa532mgddnGmNnR2843U1EQuA1DIV/REV0fXApE+5sHv+snee7sUVh8Sz5Ckpuy/aB4G+U6dibaTkZ2/jja7XGu5qWr2b7OgTD3lDCVntCZfcgsA3RiInlBTBL7tlx9OzHttjNIS7jdX3oRDWLdVqJaFiTByt4XLH2WKjaFX55inBCPlK9L6tZwFsy3vOMwAk+Y5JXre0hbEw0zq96E9pEsLOpVwzZRvKGRYU2siWbde+NaJAcVXPm447qoYyIpjxruXNNNr74OXReglzxnvWD+T0lsxz7yjte3s0B4ffiO/HLqfIBNQ3m42p3amRR1nr92oXzAXyLBjwF+7IQVvxyHD0n00N1NjIsauSbsVzBbwqESGhOTCxu+075xvlI0oTVwSVuJOWO/Mf2hVhEetIXODatjxiGauhaCxKHYlIU67rg6voywYXHmo0sr6GaxmPMZhstFMnELYHlMTuO+qWQ3KNfbuLBUMyaoIuVqpNRkiJhP4nve/dqi48eeq++7QUQdcmlIjlmeSE+2MBao0g78ySCMoXWKchpgbOwUyaIutxDmY9QRIMlQ0TynKEd1zO3UNCpSfG2SUT4ioY9a/4VdwfU0E=
 script:
-  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
