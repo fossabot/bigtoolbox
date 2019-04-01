@@ -9,4 +9,3 @@ addons:
     organization: "incplusplus-github"
 script:
 - mvn clean install org.jacoco:jacoco-maven-plugin:prepare-agent sonar:sonar
-- echo $SONAR_TOKEN
