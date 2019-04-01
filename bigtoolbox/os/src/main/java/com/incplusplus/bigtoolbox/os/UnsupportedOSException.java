@@ -7,7 +7,7 @@ public class UnsupportedOSException extends RuntimeException
 			"System version:";
 
 	/**
-	 * Thrown when the OS of the current system does not have a representative class
+	 * Thrown when the OS of the current system or the requested skeleton OS does not have a representative class
 	 * or the representative class is not yet completed.
 	 */
 	public UnsupportedOSException()
