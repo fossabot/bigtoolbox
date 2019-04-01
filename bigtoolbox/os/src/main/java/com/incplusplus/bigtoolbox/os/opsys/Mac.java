@@ -3,7 +3,7 @@ package com.incplusplus.bigtoolbox.os.opsys;
 import com.incplusplus.bigtoolbox.os.IncorrectOperatingSystemException;
 import org.apache.commons.lang3.SystemUtils;
 
-public class Mac extends OperatingSystem
+public abstract class Mac extends OperatingSystem
 {
 	public Mac()
 	{
