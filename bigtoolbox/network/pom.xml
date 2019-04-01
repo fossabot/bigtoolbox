@@ -7,13 +7,13 @@
         <artifactId>child</artifactId>
         <version>1.0.24</version>
     </parent>
-    <artifactId>io</artifactId>
-    <name>Big Tool Box: IO</name>
+    <artifactId>network</artifactId>
+    <name>Big Tool Box: Network</name>
     <packaging>jar</packaging>
     <version>1.0.24</version>
 
     <build>
-        <finalName>io</finalName>
+        <finalName>Network</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
