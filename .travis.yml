@@ -7,7 +7,6 @@ jdk:
 addons:
   sonarcloud:
     organization: "incplusplus-github"
-    token: SONAR_TOKEN
 script:
 - mvn clean install org.jacoco:jacoco-maven-plugin:prepare-agent sonar:sonar
 - echo $SONAR_TOKEN
