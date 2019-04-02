@@ -7,6 +7,7 @@ addons:
   apt:
     packages:
       - nuget
+      - libunwind
 before_install:
   - wget -O - http://dot.net/v1/dotnet-install.sh | bash
 
