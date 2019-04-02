@@ -54,7 +54,7 @@ public abstract class OperatingSystem
 		{
 			throw new UnsupportedOSException();
 		}
-		return new Unknown();
+		throw new UnsupportedOSException();
 	}
 
 	/*

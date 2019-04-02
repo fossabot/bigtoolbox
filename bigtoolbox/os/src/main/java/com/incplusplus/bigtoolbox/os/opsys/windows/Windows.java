@@ -26,7 +26,7 @@ public abstract class Windows extends OperatingSystem
 		{
 			return Windows_10.getSkeletonOS(minorVersion,buildVersion);
 		}
-		throw new OperationNotImplementedException();
+		throw new UnsupportedOSException();
 	}
 
 	//protected OperatingSystem getSkeletonOS(String releaseName, String OSVersion)
@@ -35,7 +35,7 @@ public abstract class Windows extends OperatingSystem
 	//	return new Windows_10("312.34123");
 	//}
 
-	public static OperatingSystem getInstance()
+	public static Windows getInstance()
 	{
 		if(SystemUtils.IS_OS_WINDOWS_10)
 			return new Windows_10();
