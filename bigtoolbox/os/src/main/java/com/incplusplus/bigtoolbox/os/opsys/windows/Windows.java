@@ -1,7 +1,9 @@
-package com.incplusplus.bigtoolbox.os.opsys;
+package com.incplusplus.bigtoolbox.os.opsys.windows;
 
 import com.incplusplus.bigtoolbox.os.IncorrectOperatingSystemException;
 import com.incplusplus.bigtoolbox.os.OperationNotImplementedException;
+import com.incplusplus.bigtoolbox.os.UnsupportedOSException;
+import com.incplusplus.bigtoolbox.os.opsys.OperatingSystem;
 import org.apache.commons.lang3.SystemUtils;
 
 public abstract class Windows extends OperatingSystem
@@ -33,12 +35,12 @@ public abstract class Windows extends OperatingSystem
 	//	return new Windows_10("312.34123");
 	//}
 
-	//public OperatingSystem getInstance()
-	//{
-	//	if(SystemUtils.IS_OS_WINDOWS_10)
-	//		return new Windows_10();
-	//	else return new Unknown();
-	//}
+	public static OperatingSystem getInstance()
+	{
+		if(SystemUtils.IS_OS_WINDOWS_10)
+			return new Windows_10();
+		else throw new UnsupportedOSException();
+	}
 
 	//protected Windows getSkeletonOS(String majorVersion, String minorVersion)
 	//{

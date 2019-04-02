@@ -1,7 +1,8 @@
-package com.incplusplus.bigtoolbox.os.opsys;
+package com.incplusplus.bigtoolbox.os.opsys.windows;
 
 import com.incplusplus.bigtoolbox.os.IncorrectOperatingSystemException;
 import com.incplusplus.bigtoolbox.os.LikelyOutdatedMethodException;
+import com.incplusplus.bigtoolbox.os.opsys.OperatingSystem;
 import org.apache.commons.lang3.SystemUtils;
 
 import java.io.BufferedReader;

@@ -1,6 +1,10 @@
 package com.incplusplus.bigtoolbox.os.opsys;
 
 import com.incplusplus.bigtoolbox.os.UnsupportedOSException;
+import com.incplusplus.bigtoolbox.os.opsys.linux.Linux;
+import com.incplusplus.bigtoolbox.os.opsys.mac.Mac;
+import com.incplusplus.bigtoolbox.os.opsys.other.Unknown;
+import com.incplusplus.bigtoolbox.os.opsys.windows.Windows;
 import org.apache.commons.lang3.SystemUtils;
 
 
@@ -16,22 +20,15 @@ public abstract class OperatingSystem
 	{
 		if(SystemUtils.IS_OS_WINDOWS)
 		{
-			if(SystemUtils.IS_OS_WINDOWS_10)
-			{
-				return new Windows_10();
-			}
-			else
-			{
-				throw new UnsupportedOSException();
-			}
+			return Windows.getInstance();
 		}
 		else if(SystemUtils.IS_OS_LINUX)
 		{
-			throw new UnsupportedOSException();
+			return Linux.getInstance();
 		}
 		else if(SystemUtils.IS_OS_MAC)
 		{
-			throw new UnsupportedOSException();
+			return Mac.getInstance();
 		}
 		throw new UnsupportedOSException();
 	}
