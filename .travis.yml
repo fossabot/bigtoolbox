@@ -9,7 +9,7 @@ addons:
       - nuget
       - libunwind8
 before_install:
-  - sudo wget -O - http://dot.net/v1/dotnet-install.sh | bash
+  - wget -O - http://dot.net/v1/dotnet-install.sh | bash
 
 
 #  - wget -nv https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
