@@ -9,6 +9,7 @@ import org.apache.commons.lang3.SystemUtils;
 
 
 //TODO Implement Comparable
+//TODO Add documentation for all classes and all methods in the OS package
 public abstract class OperatingSystem
 {
 	public enum OSFamily
