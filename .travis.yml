@@ -16,8 +16,7 @@ addons:
       - libunwind8
       - zlib1g
       - nuget
-before_install:
-  - bash <(wget -qO- http://dot.net/v1/dotnet-install.sh)
+
 install:
   - export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
   - curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh | bash /dev/stdin --version "$CLI_VERSION" --install-dir "$DOTNET_INSTALL_DIR"
@@ -30,5 +29,5 @@ install:
 #  - sudo apt-get update
 #  - sudo apt-get install dotnet-sdk-2.1
 script:
-  - dotnet restore
+  - dotnet --version
   - nuget help
