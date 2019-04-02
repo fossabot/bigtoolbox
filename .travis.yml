@@ -11,3 +11,4 @@ before_install:
   - sudo apt-get install dotnet-sdk-2.1
 script:
   - dotnet restore
+  - nuget help
