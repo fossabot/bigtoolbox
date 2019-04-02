@@ -1,5 +1,6 @@
 dist: xenial
 language: java
+dotnet: 2.0.0
 jdk:
   - oraclejdk11
   - openjdk11
