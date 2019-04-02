@@ -3,5 +3,5 @@ language: java
 jdk:
   - oraclejdk8
   - openjdk8
-before_install:
-  - lsb_release -a
+script:
+  - dotnet restore
