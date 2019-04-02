@@ -8,11 +8,14 @@ addons:
     packages:
       - nuget
 before_install:
-  - wget -nv https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
-  - sudo dpkg -i packages-microsoft-prod.deb
-  - sudo apt-get install apt-transport-https
-  - sudo apt-get update
-  - sudo apt-get install dotnet-sdk-2.1
+  - wget -O - http://dot.net/v1/dotnet-install.sh | bash
+
+
+#  - wget -nv https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
+#  - sudo dpkg -i packages-microsoft-prod.deb
+#  - sudo apt-get install apt-transport-https
+#  - sudo apt-get update
+#  - sudo apt-get install dotnet-sdk-2.1
 script:
   - dotnet restore
   - nuget help
