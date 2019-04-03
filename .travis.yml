@@ -24,4 +24,4 @@ install:
 
 script:
   - dotnet --version
-  - nuget help
+  - nuget version
