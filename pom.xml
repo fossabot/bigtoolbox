@@ -8,6 +8,6 @@
     <packaging>pom</packaging>
     <name>Big Tool Box</name>
     <modules>
-        <module>bigtoolbox</module>
+        <module>aggregator</module>
     </modules>
 </project>
