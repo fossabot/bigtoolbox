@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-          http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.incplusplus.bigtoolbox</groupId>
-        <artifactId>child</artifactId>
+        <artifactId>aggregator</artifactId>
         <version>1.0.24</version>
     </parent>
-    <artifactId>math</artifactId>
-    <name>Big Tool Box: Math</name>
-    <version>1.0.24</version>
+    <artifactId>io</artifactId>
+    <name>Big Tool Box: IO</name>
     <packaging>jar</packaging>
+    <version>1.0.24</version>
 
     <build>
-        <finalName>math</finalName>
+        <finalName>io</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -53,17 +52,8 @@
             </plugin>
         </plugins>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>ch.obermuhlner</groupId>
-            <artifactId>big-math</artifactId>
-            <version>2.0.1</version>
-        </dependency>
-    </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
-
 </project>

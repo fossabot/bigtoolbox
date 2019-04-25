@@ -4,16 +4,16 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.incplusplus.bigtoolbox</groupId>
-        <artifactId>child</artifactId>
+        <artifactId>aggregator</artifactId>
         <version>1.0.24</version>
     </parent>
-    <artifactId>os</artifactId>
-    <name>Big Tool Box: OS</name>
+    <artifactId>network</artifactId>
+    <name>Big Tool Box: Network</name>
     <packaging>jar</packaging>
-    <version>1.0.25</version>
+    <version>1.0.24</version>
 
     <build>
-        <finalName>os</finalName>
+        <finalName>Network</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -52,13 +52,6 @@
             </plugin>
         </plugins>
     </build>
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.0</version>
-        </dependency>
-    </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
