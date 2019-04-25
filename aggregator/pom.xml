@@ -8,9 +8,9 @@
         <version>1.0.24</version>
     </parent>
     <version>1.0.24</version>
-    <artifactId>child</artifactId>
+    <artifactId>aggregator</artifactId>
     <packaging>pom</packaging>
-    <name>Big Tool Box Child</name>
+    <name>Big Tool Box Aggregator</name>
 
 
     <modules>
