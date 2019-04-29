@@ -29,10 +29,10 @@
                 </dependencies>
 
                 <configuration>
-                    <gradleVersion>4.2.1</gradleVersion>
+                    <gradleVersion>5.3.1</gradleVersion>
                     <tasks>
                         <task>clean</task>
-                        <task>build</task>
+<!--                        <task>build</task>-->
                     </tasks>
                 </configuration>
                 <executions>
