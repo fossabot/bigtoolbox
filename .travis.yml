@@ -16,9 +16,10 @@ addons:
       - libunwind8
       - zlib1g
       - nuget
-      - msbuild
+      - mono-complete
 
 before_script:
+  - which msbuild
   - chmod +x gradlew
 
 script:
