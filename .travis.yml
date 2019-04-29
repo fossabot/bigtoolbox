@@ -23,7 +23,7 @@ before_script:
   - sudo apt install apt-transport-https ca-certificates
   - echo "deb https://download.mono-project.com/repo/ubuntu stable-xenial main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
   - sudo apt update
-  - sudo apt install mono-devel -y
+  - sudo apt install mono-devel msbuild -y
 
 script:
   - msbuild
