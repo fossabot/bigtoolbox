@@ -23,14 +23,13 @@ before_script:
   - sudo apt install apt-transport-https ca-certificates
   - echo "deb https://download.mono-project.com/repo/ubuntu stable-xenial main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
   - sudo apt update
-  - sudo apt install mono-devel msbuild -y
 
 script:
-  - msbuild
   - mvn clean verify
   - ./gradlew clean build
 
 install:
+  - sudo apt install mono-complete msbuild -y
   - export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
   - curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh | bash /dev/stdin --version "$CLI_VERSION" --install-dir "$DOTNET_INSTALL_DIR"
   - export PATH="$DOTNET_INSTALL_DIR:$PATH"
