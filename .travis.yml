@@ -19,7 +19,7 @@ addons:
       - mono-complete
 
 before_script:
-  - which msbuild
+  - msbuild
   - chmod +x gradlew
 
 script:
