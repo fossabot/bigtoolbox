@@ -9,4 +9,4 @@ This is a simple library of Java utilities that I made either because I wanted s
 ## Why?
 I felt like sharing these in case somebody manages to find this repository and is looking for tools that can pull off exactly what they need.
 ### Todo
-- Migrate to Java 11
+- Try to keep up with Java 11
