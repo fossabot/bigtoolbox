@@ -18,6 +18,10 @@ subprojects {
         }
     }
 
+    test {
+        useJUnitPlatform()
+    }
+
     sourceCompatibility = '1.8'
 
     publishing {
