@@ -22,10 +22,8 @@ before_script:
 
 script:
   - mvn clean verify
+  - which dotnet
   - ./gradlew clean build
-
-after_script:
-  - which "dotnet msbuild"
 
 install:
   - export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
