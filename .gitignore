@@ -2,7 +2,6 @@
 *.iml
 */target/
 **/target/*
-/.gitignore
 
 .gradle
 /build/
