@@ -60,7 +60,10 @@ msbuild {
 apply plugin: 'java'
 
 task finalize() {
-    doLast{print('Hi!')}
+    doFirst{
+        print('Finished msbuild')
+    }
+    //Use this space to move the exe into a usable folder
 }
 
 finalize.dependsOn(project(':aggregator:network').tasks.msbuild)
