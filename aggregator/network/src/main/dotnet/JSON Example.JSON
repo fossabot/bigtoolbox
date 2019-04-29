@@ -1,19 +1,24 @@
-{"WiFiAdapters" :  [
+{"WiFiInterfaces" : [
   {
-    "adapter-name" : "Intel(R) Wireless-AC 9260",
+    "interface-name" : "Intel(R) Wireless-AC 9260",
+	"interface-id" : "f69da0ed-2623-4739-8bfd-b3bfacc13f20",
+	"ConnectionMode" : "Profile",
+	"RadioOn" : true,
+	"Connected" : false,
+	"Profile" : null
     "WiFi-networks" : [
-      {
-        "MAC-address" : "44:48:c1:db:7b:51",
-        "SSID" : "LeopardGuest",
-        "network-kind" : "Infrastructure",
-        "rssi" : -50,
-        "channelCenterFrequencyInKilohertz" : 2462000,
-        "encryption" : "Ccmp"
-      }
+    {
+        "SSID" : "wifiAPName",
+		"BSS" : "Infrastructure",
+		"SignalQuality" : 92,
+		"Security" : true
+	},
+	{
+        "SSID" : "xfinitywifi",
+		"BSS" : "Infrastructure",
+		"SignalQuality" : 61,
+		"Security" : false
+	}
     ]
-  },
-  {
-    "adapter-name" : "TAP Windows Adapter",
-    "WiFi-networks": []
   }
 ]}
