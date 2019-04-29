@@ -19,6 +19,7 @@ addons:
 
 before_script:
   - chmod +x gradlew
+  - msbuild
 
 script:
   - mvn clean verify
