@@ -21,8 +21,8 @@ before_script:
   - chmod +x gradlew
 
 script:
+  - ls /home/travis/build/IncPlusPlus/bigtoolbox/.dotnetcli/dotnet
   - mvn clean verify
-  - which dotnet
   - ./gradlew clean build
 
 install:
