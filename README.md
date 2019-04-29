@@ -3,9 +3,10 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/fa9c00f3d5f3da195463/maintainability)](https://codeclimate.com/github/IncPlusPlus/bigtoolbox/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/fa9c00f3d5f3da195463/test_coverage)](https://codeclimate.com/github/IncPlusPlus/bigtoolbox/test_coverage)
 [![Build Status](https://travis-ci.com/IncPlusPlus/bigtoolbox.svg?branch=master)](https://travis-ci.com/IncPlusPlus/bigtoolbox)
+[![Known Vulnerabilities](https://snyk.io/test/github/IncPlusPlus/bigtoolbox/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/IncPlusPlus/bigtoolbox?targetFile=pom.xml)
 # What is this?
 This is a simple library of Java utilities that I made either because I wanted simple ways to do things for projects in college or for my own personal use.
 ## Why?
 I felt like sharing these in case somebody manages to find this repository and is looking for tools that can pull off exactly what they need.
 ### Todo
-- Migrate to Java 11
+- Try to keep up with Java 11
