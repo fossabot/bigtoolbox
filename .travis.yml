@@ -19,10 +19,11 @@ addons:
 
 before_script:
   - chmod +x gradlew
+  - ./gradlew check
 
 script:
   - mvn clean verify
-  - ./gradlew check
+  - ./gradlew clean build
 
 install:
   - export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
