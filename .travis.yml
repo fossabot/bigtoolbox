@@ -16,6 +16,7 @@ addons:
       - libunwind8
       - zlib1g
       - nuget
+      - xbuild
 
 before_script:
   - chmod +x gradlew
