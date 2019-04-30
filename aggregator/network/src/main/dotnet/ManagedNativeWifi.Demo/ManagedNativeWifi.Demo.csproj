@@ -39,6 +39,9 @@
     <Reference Include="System.Core">
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.DirectoryServices.AccountManagement">
       <Private>True</Private>
     </Reference>
