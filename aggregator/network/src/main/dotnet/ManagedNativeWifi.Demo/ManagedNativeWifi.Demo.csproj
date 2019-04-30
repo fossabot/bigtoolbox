@@ -36,7 +36,7 @@
   <ItemGroup>
     <Reference Include="ManagedNativeWifi, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ManagedNativeWifi\bin\Debug\ManagedNativeWifi.dll</HintPath>
+      <HintPath>..\Include\ManagedNativeWifi.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Private>False</Private>
