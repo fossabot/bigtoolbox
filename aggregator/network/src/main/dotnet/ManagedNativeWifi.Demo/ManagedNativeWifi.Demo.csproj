@@ -34,35 +34,41 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ManagedNativeWifi, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ManagedNativeWifi\bin\Debug\ManagedNativeWifi.dll</HintPath>
+    </Reference>
     <Reference Include="System">
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Core">
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="System.DirectoryServices">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.DirectoryServices.AccountManagement">
-      <Private>True</Private>
-    </Reference>
+    <Reference Include="System.DirectoryServices" >
+	  <SpecificVersion>False</SpecificVersion>
+	  <HintPath>..\Include\System.DirectoryServices.dll</HintPath>
+	</Reference>
+	<Reference Include="System.DirectoryServices.AccountManagement" >
+	  <SpecificVersion>False</SpecificVersion>
+	  <HintPath>..\Include\System.DirectoryServices.AccountManagement.dll</HintPath>
+	</Reference>
     <Reference Include="System.Xml.Linq">
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions">
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp">
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Data">
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Net.Http">
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Xml">
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -73,14 +79,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ManagedNativeWifi\ManagedNativeWifi.csproj">
-      <Project>{ebff4686-23e6-42bf-97ca-cf82641bcfa7}</Project>
-      <Name>ManagedNativeWifi</Name>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-    </ProjectReference>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

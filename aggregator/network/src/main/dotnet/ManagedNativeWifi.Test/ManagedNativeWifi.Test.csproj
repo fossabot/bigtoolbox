@@ -46,7 +46,9 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
@@ -59,6 +61,7 @@
     <ProjectReference Include="..\ManagedNativeWifi\ManagedNativeWifi.csproj">
       <Project>{ebff4686-23e6-42bf-97ca-cf82641bcfa7}</Project>
       <Name>ManagedNativeWifi</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <Choose>
