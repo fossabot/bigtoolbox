@@ -40,12 +40,8 @@
     <Reference Include="System.Core">
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.DirectoryServices">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.DirectoryServices.AccountManagement">
-      <Private>True</Private>
-    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
     <Reference Include="System.Xml.Linq">
       <Private>True</Private>
     </Reference>
@@ -73,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ManagedNativeWifi\ManagedNativeWifi.csproj">
