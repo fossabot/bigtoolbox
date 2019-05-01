@@ -23,6 +23,7 @@ before_script:
   - echo "deb https://download.mono-project.com/repo/ubuntu stable-xenial main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
   - sudo apt update
   - sudo apt install mono-complete msbuild -y
+  - chmod +x gradlew
 
 install:
   - export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
@@ -31,6 +32,5 @@ install:
 
 matrix:
   include:
-    - before_script: chmod +x gradlew
-      script: ./gradlew clean build
+    - script: ./gradlew clean build
     - script: mvn clean verify
