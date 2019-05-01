@@ -18,18 +18,19 @@ addons:
       - nuget
 
 before_script:
-  - chmod +x gradlew
   - sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
   - sudo apt install apt-transport-https ca-certificates
   - echo "deb https://download.mono-project.com/repo/ubuntu stable-xenial main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
   - sudo apt update
   - sudo apt install mono-complete msbuild -y
 
-script:
-  - mvn clean verify
-  - ./gradlew clean build
-
 install:
   - export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
   - curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh | bash /dev/stdin --version "$CLI_VERSION" --install-dir "$DOTNET_INSTALL_DIR"
   - export PATH="$DOTNET_INSTALL_DIR:$PATH"
+
+matrix:
+  include:
+    - before_script: chmod +x gradlew
+      script: ./gradlew clean build
+    - script: mvn clean verify
