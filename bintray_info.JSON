@@ -4,7 +4,6 @@
     "repo": "main-maven",
     "subject": "incplusplus",
     "desc": "Created automatically via push",
-    "website_url": "www.jfrog.com",
     "issue_tracker_url": "https://github.com/IncPlusPlus/bigtoolbox/issues",
     "vcs_url": "https://github.com/IncPlusPlus/bigtoolbox.git",
     "licenses": ["GPL-3.0-or-later"],
