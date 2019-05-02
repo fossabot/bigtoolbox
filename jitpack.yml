@@ -4,8 +4,7 @@ jdk:
   - oraclejdk11
   - openjdk11
 
-env:
-  - CLI_VERSION=latest
+
 addons:
   apt:
     packages:
