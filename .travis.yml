@@ -1,36 +1,37 @@
 dist: xenial
 language: java
 jdk:
-  - oraclejdk11
-  - openjdk11
-
+- oraclejdk11
+- openjdk11
 env:
-  - CLI_VERSION=latest
+- CLI_VERSION=latest
 addons:
   apt:
     packages:
-      - gettext
-      - libcurl4-openssl-dev
-      - libicu-dev
-      - libssl-dev
-      - libunwind8
-      - zlib1g
-      - nuget
-
+    - gettext
+    - libcurl4-openssl-dev
+    - libicu-dev
+    - libssl-dev
+    - libunwind8
+    - zlib1g
+    - nuget
 before_script:
-  - sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-  - sudo apt install apt-transport-https ca-certificates
-  - echo "deb https://download.mono-project.com/repo/ubuntu stable-xenial main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
-  - sudo apt update
-  - sudo apt install mono-complete msbuild -y
-  - chmod +x gradlew
-
+- sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+- sudo apt install apt-transport-https ca-certificates
+- echo "deb https://download.mono-project.com/repo/ubuntu stable-xenial main" | sudo
+  tee /etc/apt/sources.list.d/mono-official-stable.list
+- sudo apt update
+- sudo apt install mono-complete msbuild -y
+- chmod +x gradlew
 install:
-  - export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
-  - curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh | bash /dev/stdin --version "$CLI_VERSION" --install-dir "$DOTNET_INSTALL_DIR"
-  - export PATH="$DOTNET_INSTALL_DIR:$PATH"
-
+- export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
+- curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh
+  | bash /dev/stdin --version "$CLI_VERSION" --install-dir "$DOTNET_INSTALL_DIR"
+- export PATH="$DOTNET_INSTALL_DIR:$PATH"
 matrix:
   include:
-    - script: ./gradlew clean build
-    - script: mvn clean verify
+  - script: "./gradlew clean build"
+  - script: mvn clean verify
+deploy:
+  key:
+    secure: IbGNKJvA3VM4bLlePt7e72CtJCBWfA4TVLVwAd9IZXWB3Oc25qkobzDKEprRzgBm8nSXpSZfrRS+6H4dKo48tJUo4cdMeki1wJuKaUreMpkuIX25kKRM7NT3Dkx9ERoCjZA6LoJGHreQDJ1q3gGb2kNAierqwfmC4WR4NumDkszZ5fsJRGmV4A1+cyP39dXvxEPQTNq6DEdXYlFHmiFSjzWXwYo7YkQeC9XHOZzlsJ9VRO1JHFMt4oxDEcl7m7avSTFXV5eqrrjLANZw3kQGkH7YEyzbjEaPUZb92xrW3ah7Vb2jZrML5rX+yEA/tflngHV+jGcfv38lqQlYyZoGh8kcQPCX/7cN9zpXtif9JXLss6r4S7YOVqc2EBC1xeng/Rw1qwZGjwDHb3wWb8TlqkUNI7514IEf2ATSfF6VQzADKub9bd6plohUl0XcKGNI8XfgzYthb5mJd69cHmlTZDRq/6j/XRrRv6DSLB92rN/Q4xuqoZN/euPRXabN6X0Qksx88W8LiLHH18aS8rrWY6mg7F6WytEg/UCewHYUo8aBhwnyINUJ56ltU/YNTVHJtqS1us3zVLs8kwy2/fh56Ud7S+UoZ0zureMJtmiDgOxgbI+WIOmcm2PiILiBQ1I0fH78W7A3aRhAo6Z4Z+ZelFNGmkPKFBALjHxCO6otAv0=
