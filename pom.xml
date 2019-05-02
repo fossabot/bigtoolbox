@@ -10,4 +10,12 @@
     <modules>
         <module>aggregator</module>
     </modules>
+
+    <distributionManagement>
+        <repository>
+            <id>bintray-IncPlusPlus-main-maven</id>
+            <name>incplusplus-main-maven</name>
+            <url>https://api.bintray.com/maven/incplusplus/main-maven/bigtoolbox/;publish=1</url>
+        </repository>
+    </distributionManagement>
 </project>
