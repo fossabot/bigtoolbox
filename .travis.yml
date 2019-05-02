@@ -31,13 +31,14 @@ install:
 matrix:
   include:
   - script: "./gradlew clean build"
+    deploy:
+      on:
+        all_branches: true
+      provider: bintray
+      file: bintray_info.JSON
+      user: incplusplus
+      key: $bintray_key
+      skip_cleanup: true
   - script: mvn clean verify
-deploy:
-  on:
-    all_branches: true
-  provider: bintray
-  file: bintray_info.JSON
-  user: incplusplus
-  key: $bintray_key
-  skip_cleanup: true
+
 
