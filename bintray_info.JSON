@@ -18,7 +18,7 @@
   "files":
   [
     {"includePattern": "aggregator\/build\/libs\/((\\w)+-(\\d+).(\\d+).(\\d+).jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "aggregator.jar"},
-    {"includePattern": "aggregator/pom.xml)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "pom.xml"}
+    {"includePattern": "aggregator\/pom.xml", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "pom.xml"}
   ],
   "publish": true
 }
