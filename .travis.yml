@@ -32,7 +32,9 @@ install:
 matrix:
   include:
   - script: "./gradlew clean build"
-    before_deploy: tree
+    before_deploy:
+     - tree
+     - ls aggregator
     deploy:
       on:
         all_branches: true
