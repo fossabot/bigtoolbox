@@ -17,7 +17,7 @@
 
   "files":
   [
-    {"includePattern": "aggregator/build/libs/((.*)+-.*.jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "test"}
+    {"includePattern": "aggregator\/build\/libs\/((\\w)+-(\\d+).(\\d+).(\\d+).jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "test"}
   ],
   "publish": true
 }
