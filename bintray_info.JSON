@@ -12,12 +12,12 @@
   },
 
   "version": {
-    "name": "0.0.2"
+    "name": "0.0.3"
   },
 
   "files":
   [
-    {"includePattern": "aggregator/build/libs(.*)*/(.*\\.jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "aggregator/$3"}
+    {"includePattern": "aggregator/build/libs(.*)*/((.*)+-.*.jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "$3"}
   ],
   "publish": true
 }
