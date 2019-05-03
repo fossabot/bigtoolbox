@@ -17,7 +17,7 @@
 
   "files":
   [
-    {"includePattern": "README.md", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "readme"}
+    {"includePattern": "build/libs(.*)*/((.*)+-.*.jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "$3"}
   ],
   "publish": true
 }
