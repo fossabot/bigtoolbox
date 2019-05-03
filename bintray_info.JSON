@@ -12,12 +12,13 @@
   },
 
   "version": {
-    "name": "0.0.5"
+    "name": "0.0.6"
   },
 
   "files":
   [
     {"includePattern": "aggregator\/build\/libs\/((\\w)+-(\\d+).(\\d+).(\\d+).jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "aggregator.jar"}
+    {"includePattern": "aggregator\/pom.xml)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "pom.xml"}
   ],
   "publish": true
 }
