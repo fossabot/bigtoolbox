@@ -4,17 +4,46 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.incplusplus.bigtoolbox</groupId>
-        <artifactId>aggregator</artifactId>
+        <artifactId>bigtoolbox</artifactId>
         <version>1.0.33</version>
     </parent>
-    <artifactId>os</artifactId>
-    <name>Big Tool Box: OS</name>
+    <artifactId>network</artifactId>
+    <name>Big Tool Box: Network</name>
     <packaging>jar</packaging>
     <version>1.0.33</version>
 
+
     <build>
-        <finalName>os</finalName>
+        <finalName>network</finalName>
         <plugins>
+            <plugin>
+                <groupId>org.fortasoft</groupId>
+                <artifactId>gradle-maven-plugin</artifactId>
+                <version>1.0.8</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.gradle</groupId>
+                        <artifactId>gradle-tooling-api</artifactId>
+                        <version>5.2.1</version>
+                    </dependency>
+                </dependencies>
+
+                <configuration>
+                    <gradleVersion>5.3.1</gradleVersion>
+                    <tasks>
+                        <task>clean</task>
+                        <task>build</task>
+                    </tasks>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>invoke</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -52,15 +81,9 @@
             </plugin>
         </plugins>
     </build>
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.8.1</version>
-        </dependency>
-    </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
+
 </project>

@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.incplusplus.bigtoolbox</groupId>
-        <artifactId>bigtoolbox</artifactId>
+        <artifactId>bigtoolbox-parent</artifactId>
         <version>1.0.33</version>
     </parent>
     <version>1.0.33</version>
-    <artifactId>aggregator</artifactId>
+    <artifactId>bigtoolbox</artifactId>
     <packaging>pom</packaging>
     <name>Big Tool Box Aggregator</name>
     <description>A collection of tools for varying purposes.</description>
