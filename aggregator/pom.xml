@@ -28,6 +28,12 @@
         </developer>
     </developers>
 
+    <scm>
+        <connection>scm:git:git://github.com/IncPlusPlus/bigtoolbox.git</connection>
+        <developerConnection>scm:git:ssh://github.com:IncPlusPlus/bigtoolbox.git</developerConnection>
+        <url>https://github.com/IncPlusPlus/bigtoolbox/tree/master</url>
+    </scm>
+
     <modules>
         <module>io</module>
         <module>math</module>
