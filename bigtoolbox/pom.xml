@@ -39,6 +39,7 @@
         <module>math</module>
         <module>network</module>
         <module>os</module>
+        <module>assembly</module>
     </modules>
 
     <build>
@@ -54,21 +55,11 @@
                             <goal>jar</goal>
                         </goals>
                     </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.1.0</version>
-                <!-- workaround for https://bugs.openjdk.java.net/browse/JDK-8212233 -->
-                <configuration>
-                    <source>8</source>
-                </configuration>
-                <executions>
                     <execution>
-                        <id>attach-javadocs</id>
+                        <phase>package</phase>
+                        <id>generate-sources</id>
                         <goals>
-                            <goal>jar</goal>
+                            <goal>aggregate</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -81,6 +72,33 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.1.0</version>
+                <!-- workaround for https://bugs.openjdk.java.net/browse/JDK-8212233 -->
+                <configuration>
+                    <source>8</source><finalName>${project.parent.artifactId}-${project.version}</finalName>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>aggregate-javadocs</id>
+                        <goals>
+                            <goal>aggregate-jar</goal>
+                        </goals>
+                        <configuration>
+                            <includeDependencySources>false</includeDependencySources>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
