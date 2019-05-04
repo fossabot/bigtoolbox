@@ -12,13 +12,14 @@
   },
 
   "version": {
-    "name": "1.0.29"
+    "name": "1.0.30"
   },
 
   "files":
   [
-    {"includePattern": "aggregator\/build\/libs\/((\\w+)-(\\d+).(\\d+).(\\d+)((-{0,1})(\\w+)){0,1}.jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "$3.$4.$5/$2-$3.$4.$5$6.jar"},
-    {"includePattern": "aggregator\/pom.xml", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "1.0.29/pom.xml"},
+    {"includePattern": "aggregator\/build\/libs\/((\\w+)-(\\d+).(\\d+).(\\d+).jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "$3.$4.$5/$2-$3.$4.$5.jar"},
+    {"includePattern": "aggregator\\/build\\/libs\\/((\\w+)-(\\d+).(\\d+).(\\d+)(-(\\w+)){1}.jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "$3.$4.$5/$2-$3.$4.$5$6.jar"},
+    {"includePattern": "aggregator\/pom.xml", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "1.0.30/pom.xml"},
     {"includePattern": "pom.xml", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "pom.xml"}
   ],
   "publish": true
