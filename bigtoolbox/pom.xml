@@ -10,7 +10,7 @@
     <version>1.0.33</version>
     <artifactId>bigtoolbox</artifactId>
     <packaging>pom</packaging>
-    <name>Big Tool Box Aggregator</name>
+    <name>Big Tool Box</name>
     <description>A collection of tools for varying purposes.</description>
     <url>https://github.com/IncPlusPlus/bigtoolbox</url>
 

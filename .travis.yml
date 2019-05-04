@@ -34,7 +34,7 @@ matrix:
   - script: "./gradlew clean build"
     before_deploy:
      - tree
-     - ls aggregator
+     - ls bigtoolbox
     deploy:
       on:
         all_branches: true
