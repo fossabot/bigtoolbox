@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.incplusplus.bigtoolbox</groupId>
     <artifactId>bigtoolbox</artifactId>
-    <version>1.0.26</version>
+    <version>1.0.27</version>
     <packaging>pom</packaging>
     <name>Big Tool Box</name>
     <modules>

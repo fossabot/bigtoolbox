@@ -12,13 +12,14 @@
   },
 
   "version": {
-    "name": "1.0.26"
+    "name": "1.0.27"
   },
 
   "files":
   [
     {"includePattern": "aggregator\/build\/libs\/((\\w)+-(\\d+).(\\d+).(\\d+).jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "$3.$4.$5/aggregator.jar"},
-    {"includePattern": "aggregator\/pom.xml", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "1.0.26/pom.xml"}
+    {"includePattern": "aggregator\/pom.xml", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "1.0.27/pom.xml"},
+    {"includePattern": "pom.xml", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "pom.xml"}
   ],
   "publish": true
 }
