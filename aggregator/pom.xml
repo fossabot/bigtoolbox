@@ -11,7 +11,8 @@
     <artifactId>aggregator</artifactId>
     <packaging>pom</packaging>
     <name>Big Tool Box Aggregator</name>
-
+    <description>A collection of tools for varying purposes.</description>
+    <url>https://github.com/IncPlusPlus/bigtoolbox</url>
 
     <modules>
         <module>io</module>
