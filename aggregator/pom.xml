@@ -21,6 +21,13 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <name>Ryan Cloherty</name>
+            <email>cloherty.ryan@gmail.com</email>
+        </developer>
+    </developers>
+
     <modules>
         <module>io</module>
         <module>math</module>
