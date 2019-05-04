@@ -19,8 +19,7 @@
   [
     {"includePattern": "aggregator\/build\/libs\/((\\w+)-(\\d+).(\\d+).(\\d+).jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "$3.$4.$5/$2-$3.$4.$5.jar"},
     {"includePattern": "aggregator\/build\/libs\/((\\w+)-(\\d+).(\\d+).(\\d+)(-(\\w+)){1}.jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "$3.$4.$5/$2-$3.$4.$5$6.jar"},
-    {"includePattern": "aggregator\/pom.xml", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "1.0.31/pom.xml"},
-    {"includePattern": "pom.xml", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "pom.xml"}
+    {"includePattern": "aggregator\/pom.xml", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "1.0.31/pom.xml"}
   ],
   "publish": true
 }
