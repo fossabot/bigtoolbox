@@ -5,9 +5,9 @@
     <parent>
         <groupId>com.incplusplus.bigtoolbox</groupId>
         <artifactId>bigtoolbox</artifactId>
-        <version>1.0.32</version>
+        <version>1.0.33</version>
     </parent>
-    <version>1.0.32</version>
+    <version>1.0.33</version>
     <artifactId>aggregator</artifactId>
     <packaging>pom</packaging>
     <name>Big Tool Box Aggregator</name>
