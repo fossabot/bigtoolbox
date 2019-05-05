@@ -31,7 +31,7 @@ matrix:
   - jdk: oraclejdk11
     script: "./gradlew clean build"
   - jdk: oraclejdk11
-    script: mvn clean verify
+    script: mvn clean install
     before_deploy:
       - tree
     deploy:
@@ -45,4 +45,4 @@ matrix:
   - jdk: openjdk11
     script: "./gradlew clean build"
   - jdk: openjdk11
-    script: mvn clean verify
+    script: mvn clean install
