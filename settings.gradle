@@ -3,12 +3,13 @@
  */
 
 rootProject.name = 'bigtoolbox'
-include(':aggregator:io')
-include(':aggregator:math')
-include(':aggregator:network')
-include(':aggregator:os')
-include(':aggregator')
-project(':aggregator:io').projectDir = file('aggregator/io')
-project(':aggregator:math').projectDir = file('aggregator/math')
-project(':aggregator:network').projectDir = file('aggregator/network')
-project(':aggregator:os').projectDir = file('aggregator/os')
+include(':io')
+include(':math')
+include(':network')
+include(':os')
+include(':assembly')
+project(':io').projectDir = file('io')
+project(':math').projectDir = file('math')
+project(':network').projectDir = file('network')
+project(':os').projectDir = file('os')
+project(':assembly').projectDir = file('assembly')

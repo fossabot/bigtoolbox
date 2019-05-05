@@ -1,30 +1,48 @@
 dist: xenial
 language: java
-jdk:
-  - oraclejdk11
-  - openjdk11
-
 env:
-  - CLI_VERSION=latest
+- CLI_VERSION=latest
 addons:
   apt:
     packages:
-      - gettext
-      - libcurl4-openssl-dev
-      - libicu-dev
-      - libssl-dev
-      - libunwind8
-      - zlib1g
-      - nuget
-
+    - gettext
+    - libcurl4-openssl-dev
+    - libicu-dev
+    - libssl-dev
+    - libunwind8
+    - zlib1g
+    - nuget
+    - tree
 before_script:
-  - chmod +x gradlew
-
-script:
-  - mvn clean verify
-  - ./gradlew check
-
+- sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+- sudo apt install apt-transport-https ca-certificates
+- echo "deb https://download.mono-project.com/repo/ubuntu stable-xenial main" | sudo
+  tee /etc/apt/sources.list.d/mono-official-stable.list
+- sudo apt update
+- sudo apt install mono-complete msbuild -y
+- chmod +x gradlew
 install:
-  - export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
-  - curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh | bash /dev/stdin --version "$CLI_VERSION" --install-dir "$DOTNET_INSTALL_DIR"
-  - export PATH="$DOTNET_INSTALL_DIR:$PATH"
+- export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
+- curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh
+  | bash /dev/stdin --version "$CLI_VERSION" --install-dir "$DOTNET_INSTALL_DIR"
+- export PATH="$DOTNET_INSTALL_DIR:$PATH"
+matrix:
+  include:
+  - jdk: oraclejdk11
+    script: "./gradlew clean build"
+  - jdk: oraclejdk11
+    script: mvn clean install
+    before_deploy:
+      - tree
+    deploy:
+      on:
+        all_branches: true
+      provider: bintray
+      file: bintray_info_maven.JSON
+      user: incplusplus
+      key: $bintray_key
+      skip_cleanup: true
+  - jdk: openjdk11
+    script: "./gradlew clean build"
+  - jdk: openjdk11
+    script: mvn clean install
