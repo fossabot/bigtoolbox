@@ -6,7 +6,7 @@
     <artifactId>bigtoolbox-parent</artifactId>
     <version>1.0.33</version>
     <packaging>pom</packaging>
-    <name>Big Tool Box</name>
+    <name>Big Tool Box Parent</name>
     <modules>
         <module>bigtoolbox</module>
     </modules>
