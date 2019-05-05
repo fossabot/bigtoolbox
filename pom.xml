@@ -38,7 +38,11 @@
     </scm>
 
     <modules>
-        <module>bigtoolbox-child</module>
+        <module>bigtoolbox-child/io</module>
+        <module>bigtoolbox-child/math</module>
+        <module>bigtoolbox-child/network</module>
+        <module>bigtoolbox-child/os</module>
+        <module>bigtoolbox-child/assembly</module>
     </modules>
 
     <build>
