@@ -28,9 +28,9 @@ install:
 - export PATH="$DOTNET_INSTALL_DIR:$PATH"
 matrix:
   include:
-  - oraclejdk11
+  - jdk: oraclejdk11
     script: "./gradlew clean build"
-  - oraclejdk11
+  - jdk: oraclejdk11
     script: mvn clean verify
     before_deploy:
       - tree
@@ -42,7 +42,7 @@ matrix:
       user: incplusplus
       key: $bintray_key
       skip_cleanup: true
-  - openjdk11
+  - jdk: openjdk11
     script: "./gradlew clean build"
-  - openjdk11
+  - jdk: openjdk11
     script: mvn clean verify
