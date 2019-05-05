@@ -6,11 +6,11 @@
     <parent>
         <groupId>com.incplusplus.bigtoolbox</groupId>
         <artifactId>bigtoolbox-child</artifactId>
-        <version>1.0.41</version>
+        <version>1.0.42</version>
     </parent>
     <artifactId>math</artifactId>
     <name>Big Tool Box: Math</name>
-    <version>1.0.41</version>
+    <version>1.0.42</version>
     <packaging>jar</packaging>
 
     <build>
