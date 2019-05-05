@@ -32,17 +32,16 @@ install:
 matrix:
   include:
   - script: "./gradlew clean build"
-    before_deploy:
-     - tree
-     - ls bigtoolbox
-    deploy:
-      on:
-        all_branches: true
-      provider: bintray
-      file: bintray_info.JSON
-      user: incplusplus
-      key: $bintray_key
-      skip_cleanup: true
   - script: mvn clean verify
+    before_deploy:
+      - tree
+      deploy:
+        on:
+          all_branches: true
+        provider: bintray
+        file: bintray_info_maven.JSON
+        user: incplusplus
+        key: $bintray_key
+        skip_cleanup: true
 
 
