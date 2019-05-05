@@ -22,7 +22,7 @@
             <!--                <include>com.incplusplus.bigtoolbox:os</include>-->
             <!--            </includes>-->
             <binaries>
-                <includeDependencies>false</includeDependencies>
+                <includeDependencies>true</includeDependencies>
                 <outputDirectory>/</outputDirectory>
                 <unpack>true</unpack>
             </binaries>
