@@ -12,7 +12,7 @@
   },
 
   "version": {
-    "name": "1.0.38"
+    "name": "1.0.39"
   },
 
   "files":
@@ -20,7 +20,7 @@
     {"includePattern": "bigtoolbox\/target\/((\\w+)-(\\d+).(\\d+).(\\d+).jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "$3.$4.$5/$2-$3.$4.$5.jar"},
     {"includePattern": "bigtoolbox\/target\/((\\w+)-(\\d+).(\\d+).(\\d+).pom)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "$3.$4.$5/$2-$3.$4.$5.pom"},
     {"includePattern": "bigtoolbox\/target\/((\\w+)-(\\d+).(\\d+).(\\d+)(-(\\w+)){1}.jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "$3.$4.$5/$2-$3.$4.$5$6.jar"},
-    {"includePattern": "bigtoolbox\/pom.xml", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "1.0.38/pom.xml"}
+    {"includePattern": "bigtoolbox\/pom.xml", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "1.0.39/pom.xml"}
   ],
   "publish": true
 }
