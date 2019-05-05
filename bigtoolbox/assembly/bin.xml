@@ -23,7 +23,7 @@
             <!--            </includes>-->
             <binaries>
                 <includeDependencies>false</includeDependencies>
-                <outputDirectory></outputDirectory>
+                <outputDirectory>/</outputDirectory>
                 <unpack>true</unpack>
             </binaries>
         </moduleSet>
@@ -36,4 +36,11 @@
             </useTransitiveDependencies> <!-- do not pull in any transitive dependencies -->
         </dependencySet>
     </dependencySets>
+
+<!--    <fileSets>-->
+<!--        <fileSet>-->
+<!--            <outputDirectory>/</outputDirectory>-->
+<!--            <directory>${project.basedir}</directory>-->
+<!--        </fileSet>-->
+<!--    </fileSets>-->
 </assembly>
