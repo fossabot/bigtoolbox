@@ -56,8 +56,8 @@
                         </goals>
                         <configuration>
                             <generatePom>true</generatePom>
-                            <javadoc>target/${artifactId}-${project.version}-javadoc.jar</javadoc>
-                            <sources>target/${artifactId}-${project.version}-sources.jar</sources>
+                            <javadoc>target/${project.artifactId}-${project.version}-javadoc.jar</javadoc>
+                            <sources>target/${project.artifactId}-${project.version}-sources.jar</sources>
                         </configuration>
                     </execution>
                 </executions>
