@@ -35,13 +35,13 @@ matrix:
   - script: mvn clean verify
     before_deploy:
       - tree
-      deploy:
-        on:
-          all_branches: true
-        provider: bintray
-        file: bintray_info_maven.JSON
-        user: incplusplus
-        key: $bintray_key
-        skip_cleanup: true
+    deploy:
+      on:
+        all_branches: true
+      provider: bintray
+      file: bintray_info_maven.JSON
+      user: incplusplus
+      key: $bintray_key
+      skip_cleanup: true
 
 
