@@ -1,8 +1,5 @@
 dist: xenial
 language: java
-jdk:
-- oraclejdk11
-- openjdk11
 env:
 - CLI_VERSION=latest
 addons:
@@ -31,8 +28,10 @@ install:
 - export PATH="$DOTNET_INSTALL_DIR:$PATH"
 matrix:
   include:
-  - script: "./gradlew clean build"
-  - script: mvn clean verify
+  - oraclejdk11
+    script: "./gradlew clean build"
+  - oraclejdk11
+    script: mvn clean verify
     before_deploy:
       - tree
     deploy:
@@ -43,5 +42,7 @@ matrix:
       user: incplusplus
       key: $bintray_key
       skip_cleanup: true
-
-
+  - openjdk11
+    script: "./gradlew clean build"
+  - openjdk11
+    script: mvn clean verify
