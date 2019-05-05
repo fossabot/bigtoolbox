@@ -1,0 +1,25 @@
+{
+  "package": {
+    "name": "bigtoolbox",
+    "repo": "main-maven",
+    "subject": "incplusplus",
+    "desc": "Created automatically via push",
+    "issue_tracker_url": "https://github.com/IncPlusPlus/bigtoolbox/issues",
+    "vcs_url": "https://github.com/IncPlusPlus/bigtoolbox.git",
+    "licenses": ["GPL-3.0-or-later"],
+    "public_download_numbers": false,
+    "public_stats": false
+  },
+
+  "version": {
+    "name": "1.0.46"
+  },
+
+  "files":
+  [
+    {"includePattern": "bigtoolbox\/build\/libs\/((\\w+)-(\\d+).(\\d+).(\\d+).jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "$3.$4.$5/$2-$3.$4.$5.jar"},
+    {"includePattern": "bigtoolbox\/build\/libs\/((\\w+)-(\\d+).(\\d+).(\\d+)(-(\\w+)){1}.jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "$3.$4.$5/$2-$3.$4.$5$6.jar"},
+    {"includePattern": "bigtoolbox\/pom.xml", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": "1.0.46/pom.xml"}
+  ],
+  "publish": true
+}

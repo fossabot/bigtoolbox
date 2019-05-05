@@ -4,7 +4,7 @@
 
 allprojects {
     group = 'com.incplusplus.bigtoolbox'
-    version = '1.0.24'
+    version = '1.0.46'
 }
 
 subprojects {
@@ -18,14 +18,15 @@ subprojects {
         }
     }
 
-    test {
-        useJUnitPlatform()
-    }
+//    test {
+//        useJUnitPlatform()
+//    }
 
     dependencies {
         testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
         testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
     }
+
 
     sourceCompatibility = '1.8'
 
@@ -35,5 +36,19 @@ subprojects {
                 from(components.java)
             }
         }
+    }
+    task sourcesJar(type: Jar, dependsOn: classes) {
+        archiveClassifier = "sources"
+        from sourceSets.main.allSource
+    }
+
+    task javadocJar(type: Jar, dependsOn: javadoc) {
+        archiveClassifier = 'javadoc'
+        from javadoc.destinationDir
+    }
+
+    artifacts {
+        archives sourcesJar
+        archives javadocJar
     }
 }
