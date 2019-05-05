@@ -3,12 +3,14 @@
  */
 
 rootProject.name = 'bigtoolbox'
-include(':bigtoolbox:io')
-include(':bigtoolbox:math')
-include(':bigtoolbox:network')
-include(':bigtoolbox:os')
-include(':bigtoolbox')
-project(':bigtoolbox:io').projectDir = file('bigtoolbox/io')
-project(':bigtoolbox:math').projectDir = file('bigtoolbox/math')
-project(':bigtoolbox:network').projectDir = file('bigtoolbox/network')
-project(':bigtoolbox:os').projectDir = file('bigtoolbox/os')
+include(':bigtoolbox-child:io')
+include(':bigtoolbox-child:math')
+include(':bigtoolbox-child:network')
+include(':bigtoolbox-child:os')
+include(':bigtoolbox-child:assembly')
+include(':bigtoolbox-child')
+project(':bigtoolbox-child:io').projectDir = file('bigtoolbox-child/io')
+project(':bigtoolbox-child:math').projectDir = file('bigtoolbox-child/math')
+project(':bigtoolbox-child:network').projectDir = file('bigtoolbox-child/network')
+project(':bigtoolbox-child:os').projectDir = file('bigtoolbox-child/os')
+project(':bigtoolbox-child:assembly').projectDir = file('bigtoolbox-child/assembly')
