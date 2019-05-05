@@ -7,6 +7,29 @@
     <version>1.0.41</version>
     <packaging>pom</packaging>
     <name>Big Tool Box</name>
+    <description>A collection of tools for varying purposes.</description>
+    <url>https://github.com/IncPlusPlus/bigtoolbox</url>
+
+    <licenses>
+        <license>
+            <name>GNU General Public License Version 3 (GPLv3)</name>
+            <url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Ryan Cloherty</name>
+            <email>cloherty.ryan@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/IncPlusPlus/bigtoolbox.git</connection>
+        <developerConnection>scm:git:ssh://github.com:IncPlusPlus/bigtoolbox.git</developerConnection>
+        <url>https://github.com/IncPlusPlus/bigtoolbox/tree/master</url>
+    </scm>
+
     <modules>
         <module>bigtoolbox-child</module>
     </modules>
