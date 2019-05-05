@@ -46,7 +46,7 @@
                             <goal>single</goal>
                         </goals>
                         <configuration>
-                            <finalName>${project.parent.parent.artifactId}-${project.version}</finalName>
+                            <finalName>${project.parent.artifactId}-${project.version}</finalName>
                             <descriptors>
                                 <descriptor>bin.xml</descriptor>
                             </descriptors>
@@ -64,7 +64,7 @@
                 <!-- workaround for https://bugs.openjdk.java.net/browse/JDK-8212233 -->
                 <configuration>
                     <source>8</source>
-                    <finalName>${project.parent.parent.artifactId}-${project.version}</finalName>
+                    <finalName>${project.parent.artifactId}-${project.version}</finalName>
                     <includeDependencySources>true</includeDependencySources>
                     <jarOutputDirectory>${project.basedir}/../../target</jarOutputDirectory>
                 </configuration>
