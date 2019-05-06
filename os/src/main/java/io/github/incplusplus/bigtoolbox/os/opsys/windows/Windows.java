@@ -1,9 +1,8 @@
-package com.incplusplus.bigtoolbox.os.opsys.windows;
+package io.github.incplusplus.bigtoolbox.os.opsys.windows;
 
-import com.incplusplus.bigtoolbox.os.IncorrectOperatingSystemException;
-import com.incplusplus.bigtoolbox.os.OperationNotImplementedException;
-import com.incplusplus.bigtoolbox.os.UnsupportedOSException;
-import com.incplusplus.bigtoolbox.os.opsys.OperatingSystem;
+import io.github.incplusplus.bigtoolbox.os.IncorrectOperatingSystemException;
+import io.github.incplusplus.bigtoolbox.os.UnsupportedOSException;
+import io.github.incplusplus.bigtoolbox.os.opsys.OperatingSystem;
 import org.apache.commons.lang3.SystemUtils;
 
 public abstract class Windows extends OperatingSystem

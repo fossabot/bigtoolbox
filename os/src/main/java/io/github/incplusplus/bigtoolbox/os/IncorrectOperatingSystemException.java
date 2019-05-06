@@ -1,4 +1,4 @@
-package com.incplusplus.bigtoolbox.os;
+package io.github.incplusplus.bigtoolbox.os;
 
 public class IncorrectOperatingSystemException extends RuntimeException
 {

@@ -1,8 +1,8 @@
-package com.incplusplus.bigtoolbox.os.opsys.linux;
+package io.github.incplusplus.bigtoolbox.os.opsys.linux;
 
-import com.incplusplus.bigtoolbox.os.IncorrectOperatingSystemException;
-import com.incplusplus.bigtoolbox.os.UnsupportedOSException;
-import com.incplusplus.bigtoolbox.os.opsys.OperatingSystem;
+import io.github.incplusplus.bigtoolbox.os.IncorrectOperatingSystemException;
+import io.github.incplusplus.bigtoolbox.os.UnsupportedOSException;
+import io.github.incplusplus.bigtoolbox.os.opsys.OperatingSystem;
 import org.apache.commons.lang3.SystemUtils;
 
 public abstract class Linux extends OperatingSystem

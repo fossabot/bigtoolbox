@@ -1,10 +1,9 @@
-package com.incplusplus.bigtoolbox.os.opsys;
+package io.github.incplusplus.bigtoolbox.os.opsys;
 
-import com.incplusplus.bigtoolbox.os.UnsupportedOSException;
-import com.incplusplus.bigtoolbox.os.opsys.linux.Linux;
-import com.incplusplus.bigtoolbox.os.opsys.mac.Mac;
-import com.incplusplus.bigtoolbox.os.opsys.other.Unknown;
-import com.incplusplus.bigtoolbox.os.opsys.windows.Windows;
+import io.github.incplusplus.bigtoolbox.os.UnsupportedOSException;
+import io.github.incplusplus.bigtoolbox.os.opsys.linux.Linux;
+import io.github.incplusplus.bigtoolbox.os.opsys.mac.Mac;
+import io.github.incplusplus.bigtoolbox.os.opsys.windows.Windows;
 import org.apache.commons.lang3.SystemUtils;
 
 

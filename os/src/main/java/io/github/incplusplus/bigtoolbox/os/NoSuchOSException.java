@@ -1,10 +1,10 @@
-package com.incplusplus.bigtoolbox.os;
+package io.github.incplusplus.bigtoolbox.os;
 
-public class LikelyOutdatedMethodException extends RuntimeException
+public class NoSuchOSException extends RuntimeException
 {
-	private static String cause = "A method that was called is in an unexpected state. \n" +
-			"This is likely because the environment the method expects is outdated. \n" +
-			"Thrown from method";
+	private static String cause = "The OS was given invalid constructor arguments. \n" +
+			"The version of this OS requested has never existed. \n" +
+			"Thrown from";
 
 	/**
 	 * A method that depends on very specific strings given from the OSFamily may
@@ -14,7 +14,7 @@ public class LikelyOutdatedMethodException extends RuntimeException
 	 * changes the expected string format.
 	 * @param throwingClass The class that threw this exception. Best practice is to send in getClass()
 	 */
-	public LikelyOutdatedMethodException(Class<?> throwingClass)
+	public NoSuchOSException(Class<?> throwingClass)
 	{
 		super(String.format("%s %s in class %s in package %s", cause, throwingClass.getEnclosingMethod().getName(), throwingClass.getName(), throwingClass.getPackage().toString()));
 	}
