@@ -1,8 +1,11 @@
-package com.incplusplus.bigtoolbox.math;
+package io.github.incplusplus.bigtoolbox.math;
 
 import java.math.BigDecimal;
 import java.util.Scanner;
-import com.incplusplus.bigtoolbox.math.differentialandintegratedcalculus.*;
+import io.github.incplusplus.bigtoolbox.math.differentialandintegratedcalculus.*;
+import io.github.incplusplus.bigtoolbox.math.differentialandintegratedcalculus.Integrator;
+import io.github.incplusplus.bigtoolbox.math.differentialandintegratedcalculus.Polynomial;
+import io.github.incplusplus.bigtoolbox.math.differentialandintegratedcalculus.Term;
 
 /**
  * @author Ryan Cloherty

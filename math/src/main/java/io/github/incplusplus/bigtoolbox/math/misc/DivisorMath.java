@@ -1,8 +1,6 @@
-package com.incplusplus.bigtoolbox.math.misc;
+package io.github.incplusplus.bigtoolbox.math.misc;
 
 import java.util.ArrayList;
-
-import static com.incplusplus.bigtoolbox.math.misc.PrimeMath.distinctPrimeFactors;
 
 public class DivisorMath
 {
@@ -55,7 +53,7 @@ public class DivisorMath
 	public static int numProperDivisors(int n)
 	{
 		int numProperDivisors = 1;
-		int[][] distinctPrimeFactors = distinctPrimeFactors(n);
+		int[][] distinctPrimeFactors = PrimeMath.distinctPrimeFactors(n);
 		for(int[] i : distinctPrimeFactors)
 		{
 			numProperDivisors *= i[1] + 1;

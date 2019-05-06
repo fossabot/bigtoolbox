@@ -1,4 +1,4 @@
-package com.incplusplus.bigtoolbox.math.differentialandintegratedcalculus;
+package io.github.incplusplus.bigtoolbox.math.differentialandintegratedcalculus;
 
 import java.math.BigDecimal;
 
@@ -60,7 +60,7 @@ public class X extends Term
 	@Override
 	public BigDecimal integration(BigDecimal in)
 	{
-		return in.pow(exponent + 1).multiply(coefficient.divide(new BigDecimal(exponent + 1), Term.mc));
+		return in.pow(exponent + 1).multiply(coefficient.divide(new BigDecimal(exponent + 1), mc));
 	}
 
 	/**

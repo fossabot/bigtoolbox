@@ -1,4 +1,4 @@
-package com.incplusplus.bigtoolbox.math.misc;
+package io.github.incplusplus.bigtoolbox.math.misc;
 
 public class AmicableMath
 {

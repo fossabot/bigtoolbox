@@ -1,4 +1,4 @@
-package com.incplusplus.bigtoolbox.math.differentialandintegratedcalculus;
+package io.github.incplusplus.bigtoolbox.math.differentialandintegratedcalculus;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
