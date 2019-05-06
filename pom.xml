@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.incplusplus.bigtoolbox</groupId>
+    <groupId>io.github.incplusplus</groupId>
     <artifactId>bigtoolbox</artifactId>
-    <version>1.0.46</version>
+    <version>1.0.48</version>
     <packaging>pom</packaging>
     <name>Big Tool Box</name>
     <description>A collection of tools for varying purposes.</description>
@@ -80,7 +80,7 @@
                             <outputDirectory>${basedir}/target</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>${settings.localRepository}/com/incplusplus/bigtoolbox/bigtoolbox/${project.version}</directory>
+                                    <directory>${settings.localRepository}/io/github/incplusplus/bigtoolbox/${project.version}</directory>
                                     <includes>
                                         <include>*.pom</include>
                                     </includes>

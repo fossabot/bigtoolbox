@@ -3,8 +3,8 @@
  */
 
 allprojects {
-    group = 'com.incplusplus.bigtoolbox'
-    version = '1.0.46'
+    group = 'io.github.incplusplus'
+    version = '1.0.48'
 }
 
 subprojects {

@@ -16,10 +16,10 @@
 
             <!-- Now, select which projects to include in this module-set. -->
             <!--            <includes>-->
-            <!--                <include>com.incplusplus.bigtoolbox:io</include>-->
-            <!--                <include>com.incplusplus.bigtoolbox:math</include>-->
-            <!--                <include>com.incplusplus.bigtoolbox:network</include>-->
-            <!--                <include>com.incplusplus.bigtoolbox:os</include>-->
+            <!--                <include>io.github.incplusplus:io</include>-->
+            <!--                <include>io.github.incplusplus:math</include>-->
+            <!--                <include>io.github.incplusplus:network</include>-->
+            <!--                <include>io.github.incplusplus:os</include>-->
             <!--            </includes>-->
             <binaries>
                 <includeDependencies>true</includeDependencies>
