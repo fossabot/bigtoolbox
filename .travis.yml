@@ -35,8 +35,7 @@ matrix:
     before_deploy:
       - tree
     deploy:
-      on:
-        all_branches: true
+      on: develop
       provider: bintray
       file: bintray_info_maven.JSON
       user: incplusplus
