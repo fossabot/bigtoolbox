@@ -19,6 +19,7 @@ gradle-app.setting
 # Don't commit Visual Studio folders
 **/.vs/
 **/obj/
+**/packages/
 
 # Ignore stuff from MSBuild (however, it will be included in the .jar during the build)
 network/src/main/resources/JavaInterop.exe
