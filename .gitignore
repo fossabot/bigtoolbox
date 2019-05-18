@@ -19,3 +19,8 @@ gradle-app.setting
 # Don't commit Visual Studio folders
 **/.vs/
 **/obj/
+
+# Ignore stuff from MSBuild (however, it will be included in the .jar during the build)
+network/src/main/resources/JavaInterop.exe
+network/src/main/resources/JavaInterop.exe.config
+network/src/main/resources/SimpleWifi.dll
