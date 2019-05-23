@@ -16,7 +16,7 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 /bigtoolbox/network/network.errors.log
 
-# Don't commit Visual Studio folders
+# Don't commit Visual Studio items
 **/.vs/
 **/obj/
 **/packages/
@@ -26,3 +26,4 @@ gradle-app.setting
 network/src/main/resources/JavaInterop.exe
 network/src/main/resources/JavaInterop.exe.config
 network/src/main/resources/SimpleWifi.dll
+network/src/main/resources/Newtonsoft.Json.xml
