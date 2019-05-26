@@ -16,6 +16,23 @@ public abstract class OperatingSystem
 		Windows, Linux, Mac
 	}
 
+	public static OSFamily getOSFamily()
+	{
+		if(SystemUtils.IS_OS_WINDOWS)
+		{
+			return OSFamily.Windows;
+		}
+		else if(SystemUtils.IS_OS_LINUX)
+		{
+			return OSFamily.Linux;
+		}
+		else if(SystemUtils.IS_OS_MAC)
+		{
+			return OSFamily.Mac;
+		}
+		else{throw new UnsupportedOSException();}
+	}
+
 	public static OperatingSystem getOS()
 	{
 		if(SystemUtils.IS_OS_WINDOWS)
