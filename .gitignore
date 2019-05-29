@@ -4,7 +4,9 @@
 **/target/*
 
 .gradle
+
 **/build/
+!**/packages/**/build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -19,6 +21,7 @@ gradle-app.setting
 # Don't commit Visual Studio items
 **/.vs/
 **/obj/
+
 **/bin/
 
 # Ignore stuff from MSBuild (however, it will be included in the .jar during the build)
