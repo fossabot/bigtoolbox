@@ -19,7 +19,6 @@ gradle-app.setting
 # Don't commit Visual Studio items
 **/.vs/
 **/obj/
-**/packages/
 **/bin/
 
 # Ignore stuff from MSBuild (however, it will be included in the .jar during the build)
