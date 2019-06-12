@@ -5,7 +5,7 @@
 	"ConnectionMode" : "Profile",
 	"RadioOn" : true,
 	"Connected" : false,
-	"Profile" : null
+	"Profile" : null,
     "WiFi-networks" : [
     {
         "SSID" : "wifiAPName",
