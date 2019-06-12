@@ -8,3 +8,5 @@
 This is a simple library of Java utilities that I made either because I wanted simple ways to do things for projects in college or for my own personal use.
 ## Why?
 I felt like sharing these in case somebody manages to find this repository and is looking for tools that can pull off exactly what they need.
+## Acknowledgements
+`File1` of the IO module uses code from [gt4dev](https://github.com/gt4dev)'s [yet-another-tree-structure repository](https://github.com/gt4dev/yet-another-tree-structure).
