@@ -18,6 +18,7 @@
         <bintray.repo>incplusplus/main-maven</bintray.repo>
         <bintray.package>bigtoolbox</bintray.package>
         <bintray.subject>incplusplus</bintray.subject>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <licenses>
