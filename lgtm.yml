@@ -99,7 +99,7 @@
 # # block, with one or more steps.                                                        #
 # #########################################################################################
 #
-# extraction:
+ extraction:
 #   # Define settings for C/C++ analysis
 #   #####################################
 #   cpp:
