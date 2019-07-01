@@ -274,7 +274,7 @@
        packages:
          - openjdk-11-jdk
      before_index:
-       export JAVA_HOME=
+       export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/"
 #     # Add an `after-prepare` step if you need to run commands after the prepare step.
 #     # Each command should be listed on a separate line.
 #     after_prepare:
