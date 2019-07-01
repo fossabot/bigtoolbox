@@ -273,6 +273,8 @@
      prepare:
        packages:
          - openjdk-11-jdk
+     before_index:
+       export JAVA_HOME=
 #     # Add an `after-prepare` step if you need to run commands after the prepare step.
 #     # Each command should be listed on a separate line.
 #     after_prepare:
@@ -306,6 +308,7 @@
 #       # to use instead.
        build_command:
          - echo $JAVA_HOME
+         - tree $LGTM_WORKSPACE
          - mvn clean install
 #
 #   # Define settings for JavaScript analysis
