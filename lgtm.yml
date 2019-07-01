@@ -270,13 +270,13 @@
 #   ####################################
    java:
 #     # The `prepare` step exists for customization on LGTM.com only.
-#     prepare:
+     prepare:
 #     # Add an `after-prepare` step if you need to run commands after the prepare step.
 #     # Each command should be listed on a separate line.
 #     after_prepare:
 #       - export PATH=$LGTM_WORKSPACE/tools:$PATH
 #     # The `index` step extracts information from the files in the codebase.
-#     index:
+     index:
 #       # Specify Gradle settings.
 #       gradle:
 #         # Specify the required Gradle version.
