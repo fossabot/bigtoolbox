@@ -309,7 +309,7 @@
        build_command:
          - echo $JAVA_HOME
          - mvn clean install
-#
+
 #   # Define settings for JavaScript analysis
 #   ##########################################
 #   javascript:
