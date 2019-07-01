@@ -302,7 +302,9 @@
 #       xml_mode: ALL
 #       # Override the autobuild process by specifying a list of custom build commands
 #       # to use instead.
-       build_command: mvn clean install
+       build_command:
+         - echo $JAVA_HOME
+         - mvn clean install
 #
 #   # Define settings for JavaScript analysis
 #   ##########################################
