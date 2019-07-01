@@ -308,7 +308,6 @@
 #       # to use instead.
        build_command:
          - echo $JAVA_HOME
-         - tree $LGTM_WORKSPACE
          - mvn clean install
 #
 #   # Define settings for JavaScript analysis
