@@ -277,16 +277,13 @@
 #       - export PATH=$LGTM_WORKSPACE/tools:$PATH
 #     # The `index` step extracts information from the files in the codebase.
      index:
+#       Specify the Java version required to build the project.
+       java_version: 11
 #       # Specify Gradle settings.
 #       gradle:
 #         # Specify the required Gradle version.
 #         # Default: determined automatically.
 #         version: 4.4
-#       # Override the autobuild process by specifying a list of custom build commands
-#       # to use instead.
-       build_command: mvn clean install
-#       # Specify the Java version required to build the project.
-       java_version: 11
 #       # Specify Maven settings.
        maven:
 #         # Specify the path (absolute or relative) of a Maven settings file to use.
@@ -303,6 +300,9 @@
 #       #   DEFAULT = only extract XML files named `AndroidManifest.xml`.
 #       #   DISABLED = do not extract any XML files.
 #       xml_mode: ALL
+#       # Override the autobuild process by specifying a list of custom build commands
+#       # to use instead.
+       build_command: mvn clean install
 #
 #   # Define settings for JavaScript analysis
 #   ##########################################
