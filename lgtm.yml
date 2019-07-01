@@ -284,7 +284,7 @@
 #         version: 4.4
 #       # Override the autobuild process by specifying a list of custom build commands
 #       # to use instead.
-#       build_command: ./compile-all.sh
+       build_command: mvn clean install
 #       # Specify the Java version required to build the project.
        java_version: 11
 #       # Specify Maven settings.
