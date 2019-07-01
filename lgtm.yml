@@ -270,7 +270,9 @@
 #   ####################################
    java:
 #     # The `prepare` step exists for customization on LGTM.com only.
-#     prepare:
+     prepare:
+       packages:
+         - openjdk-11-jdk
 #     # Add an `after-prepare` step if you need to run commands after the prepare step.
 #     # Each command should be listed on a separate line.
 #     after_prepare:
