@@ -272,6 +272,7 @@
 #     # The `prepare` step exists for customization on LGTM.com only.
      prepare:
        packages:
+         - mono-devel
          - libmono-2.0-dev
          - build-essential
      before_index:
