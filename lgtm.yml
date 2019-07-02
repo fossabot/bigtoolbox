@@ -273,6 +273,7 @@
      prepare:
        packages:
          - mono-devel
+         - msbuild
          - libmono-2.0-dev
          - build-essential
      before_index:
