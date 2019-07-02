@@ -1,38 +1,39 @@
-package com.tree;
+package io.github.incplusplus.bigtoolbox.io.filesys;
 
 import java.util.Iterator;
 
-public class TreeNodeIter<T> implements Iterator<TreeNode<T>> {
+public class File1Iter implements Iterator<File1>
+{
 
 	enum ProcessStages {
 		ProcessParent, ProcessChildCurNode, ProcessChildSubNode
 	}
 
-	private TreeNode<T> treeNode;
+	private File1 File1;
 
-	public TreeNodeIter(TreeNode<T> treeNode) {
-		this.treeNode = treeNode;
+	public File1Iter(File1 file) {
+		this.File1 = file;
 		this.doNext = ProcessStages.ProcessParent;
-		this.childrenCurNodeIter = treeNode.children.iterator();
+		this.childrenCurNodeIter = file.children.iterator();
 	}
 
 	private ProcessStages doNext;
-	private TreeNode<T> next;
-	private Iterator<TreeNode<T>> childrenCurNodeIter;
-	private Iterator<TreeNode<T>> childrenSubNodeIter;
+	private File1 next;
+	private Iterator<File1> childrenCurNodeIter;
+	private Iterator<File1> childrenSubNodeIter;
 
 	@Override
 	public boolean hasNext() {
 
 		if (this.doNext == ProcessStages.ProcessParent) {
-			this.next = this.treeNode;
+			this.next = this.File1;
 			this.doNext = ProcessStages.ProcessChildCurNode;
 			return true;
 		}
 
 		if (this.doNext == ProcessStages.ProcessChildCurNode) {
 			if (childrenCurNodeIter.hasNext()) {
-				TreeNode<T> childDirect = childrenCurNodeIter.next();
+				File1 childDirect = childrenCurNodeIter.next();
 				childrenSubNodeIter = childDirect.iterator();
 				this.doNext = ProcessStages.ProcessChildSubNode;
 				return hasNext();
@@ -60,7 +61,7 @@ public class TreeNodeIter<T> implements Iterator<TreeNode<T>> {
 	}
 
 	@Override
-	public TreeNode<T> next() {
+	public File1 next() {
 		return this.next;
 	}
 

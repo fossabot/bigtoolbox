@@ -2,11 +2,13 @@ package io.github.incplusplus.bigtoolbox.io.filesys;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.lang.Deprecated;
 
 /**
  * This class represents a file within a Directory.
  * This class is named Record to avoid conflicts with Java's own File class.
  */
+@Deprecated(since = "1.0.50", forRemoval = true)
 public class Record extends Entry
 {
 	/*
