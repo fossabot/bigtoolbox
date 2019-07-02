@@ -2,10 +2,12 @@ package io.github.incplusplus.bigtoolbox.io.filesys;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.lang.Deprecated;
 
 /**
  * This class represents a single directory (A.K.A. a folder)
  */
+@Deprecated(since = "1.0.50", forRemoval = true)
 public class Directory extends Entry
 {
 	// TODO add verbosity option to indexing method
@@ -18,6 +20,7 @@ public class Directory extends Entry
 	private int numFolders = 0;
 	private int numFiles = 0;
 	private long totalSize;
+	//TODO Check if this is still relevant (it may no longer be)
 	private final String[] filesToIgnoreBuiltIn = {"Directory.class", "File.class", "FileRelatedTools.class"};
 	private ArrayList<String> excludedFiles;
 	private ArrayList<Record> foundExcludedFiles = new ArrayList<>();
@@ -159,6 +162,7 @@ public class Directory extends Entry
 	@Override
 	public long getSize()
 	{
+		index();
 		return totalSize;
 	}
 

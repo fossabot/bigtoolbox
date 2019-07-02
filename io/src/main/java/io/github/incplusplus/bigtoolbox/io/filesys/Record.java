@@ -2,17 +2,19 @@ package io.github.incplusplus.bigtoolbox.io.filesys;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.lang.Deprecated;
 
 /**
  * This class represents a file within a Directory.
  * This class is named Record to avoid conflicts with Java's own File class.
  */
+@Deprecated(since = "1.0.50", forRemoval = true)
 public class Record extends Entry
 {
 	/*
 	 * TODO Add various hashing/checksum techniques
 	 * TODO Add a compare function that uses hashing
-	 * TODO Implement some kind of warning system IF the user is on Windows
+	 * TODO Implement some kind of warning system IF the user is on Windows (re: path length limit)
 	 *  Maybe check for registry (and/or group policy) entry that expands path length
 	 *  It would likely be good to have this be part of a VERBOSE flag
 	 *  See https://www.howtogeek.com/266621/how-to-make-windows-10-accept-file-paths-over-260-characters/
