@@ -273,6 +273,7 @@
      prepare:
        packages:
          - openjdk-11-jdk
+         - mono-complete
      before_index:
        export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 #     # Add an `after-prepare` step if you need to run commands after the prepare step.
