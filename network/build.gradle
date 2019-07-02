@@ -6,14 +6,19 @@ plugins {
     id 'com.ullink.msbuild' version '3.1'
 }
 
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.5'
+    compile(project(":os"))
+}
 
 
 description = 'Big Tool Box: Network'
 publishing.publications.maven.artifact(javadocJar)
 
+
 msbuild {
     // mandatory (one of those)
-    projectFile = file('src/main/dotnet/ManagedNativeWifi.Demo/ManagedNativeWifi.Demo.csproj')
+    projectFile = file('src/main/dotnet/WinWiFi/JavaInterop/JavaInterop.csproj')
 
     // MsBuild project name (/p:Project=...)
 //    projectName = ManagedNativeWifi.Demo
@@ -35,16 +40,18 @@ msbuild {
     // Below values can override settings from the project file
 
     // overrides project OutputPath
-//    destinationDir = 'build/msbuild/bin'
+    destinationDir = 'src/main/resources'
 
     // overrides project IntermediaryOutputPath
-    intermediateDir = 'build/msbuild/obj'
+//    intermediateDir = 'build/msbuild/obj'
 
     // Generates XML documentation file (from javadoc through custom DocLet)
     generateDoc = false
 
     // Other msbuild options can be set:
     // loggerAssembly, generateDoc, debugType, optimize, debugSymbols, configuration, platform, defineConstants ...
+    debugSymbols=false
+    debugType="None"
 
     // you can also provide properties by name (/p:SomeProperty=Value)
 //    parameters.SomeProperty = 'Value'
