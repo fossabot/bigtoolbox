@@ -270,11 +270,12 @@
 #   ####################################
    java:
 #     # The `prepare` step exists for customization on LGTM.com only.
-     prepare:
-       packages:
-         - mono-devel
-         - mono-xbuild
+#     prepare:
+#       packages:
+#         - mono-devel
+#         - mono-xbuild
      before_index:
+       export IS_LGTM=TRUE
        export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 #     # Add an `after-prepare` step if you need to run commands after the prepare step.
 #     # Each command should be listed on a separate line.
