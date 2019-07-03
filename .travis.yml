@@ -5,8 +5,9 @@ env:
 addons:
   apt:
     packages:
-    - msbuild
-    - mono-devel
+#      - msbuild
+      - mono-devel
+      - mono-xbuild
 before_script: 
 matrix:
   include:
