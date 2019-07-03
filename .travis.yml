@@ -24,11 +24,11 @@ matrix:
       key: "$bintray_key"
       skip_cleanup: true
     - provider: releases
-    api_key:
-      secure: qCqDUcpjStlzZvMaeORMVwAPj2FwXDS8q+df1eJG1ONgDu8A0huErWIpgAtgWGZn9uAI1Kk6rvB9mbdCvbcMV1KhXrC/jyHGJd7JRfQI7HX4k7LPUC2avOwJN8hdMQA5nJqnI+sajqVWsMtVffyQgvLHvuuMttzg6NxUD+3ZEF/S5ZcYu3g+YORH9zebnSRInDW50vEh0FPm/ceetwAGo97PZfZwo+0LpMysD8iHD5Jw3j8yVFMY6VBk1VU1O7hGKZ9UvpEz3GfTp8XjFafx2bkiDWbOrOrYOcAq/GohD6BnICpgB5ndJaX8YO7t75RWdHSlEkUMvlP4+VNOLs8W+Aj9rUtvf0yAe2MgkOqxpW47URWtkugXRMA+h7BJox7PNuDWO3wAFxKm1Pn3JuOx7A5pv2xgWjco0uq5yb0e1a1JfIGq5eiU25A+dgDEAf/WwX3nhNo+aJVMzRcbEMz/YfFRx7dAUPVyoaJR2MLj3QNBPIX5qeYvNjtb7EcaTk5RwwhBQTRMvKvv4RWlGkLj5ZVsfP9S0H7RCWccZms1ANpxTRe8NWzZ2E5k17rls5xMsSeni+DKwft39wjWcOBCzPHHKZw0oz92zQn0m5PlCVm3Mq+/Oi7fKAE89+vE3Voc6mXfzEsYgTzUCY1/5fPOeSnFY0LHBfQUz3a5gJ1ivEg=
-    file: target/bigtoolbox-*.*.*.jar
-    on: hotfix/improve_travis_build_performance
-      repo: IncPlusPlus/bigtoolbox
+      api_key:
+        secure: qCqDUcpjStlzZvMaeORMVwAPj2FwXDS8q+df1eJG1ONgDu8A0huErWIpgAtgWGZn9uAI1Kk6rvB9mbdCvbcMV1KhXrC/jyHGJd7JRfQI7HX4k7LPUC2avOwJN8hdMQA5nJqnI+sajqVWsMtVffyQgvLHvuuMttzg6NxUD+3ZEF/S5ZcYu3g+YORH9zebnSRInDW50vEh0FPm/ceetwAGo97PZfZwo+0LpMysD8iHD5Jw3j8yVFMY6VBk1VU1O7hGKZ9UvpEz3GfTp8XjFafx2bkiDWbOrOrYOcAq/GohD6BnICpgB5ndJaX8YO7t75RWdHSlEkUMvlP4+VNOLs8W+Aj9rUtvf0yAe2MgkOqxpW47URWtkugXRMA+h7BJox7PNuDWO3wAFxKm1Pn3JuOx7A5pv2xgWjco0uq5yb0e1a1JfIGq5eiU25A+dgDEAf/WwX3nhNo+aJVMzRcbEMz/YfFRx7dAUPVyoaJR2MLj3QNBPIX5qeYvNjtb7EcaTk5RwwhBQTRMvKvv4RWlGkLj5ZVsfP9S0H7RCWccZms1ANpxTRe8NWzZ2E5k17rls5xMsSeni+DKwft39wjWcOBCzPHHKZw0oz92zQn0m5PlCVm3Mq+/Oi7fKAE89+vE3Voc6mXfzEsYgTzUCY1/5fPOeSnFY0LHBfQUz3a5gJ1ivEg=
+      file: target/bigtoolbox-*.*.*.jar
+      on: hotfix/improve_travis_build_performance
+        repo: IncPlusPlus/bigtoolbox
   - jdk: openjdk11
     script: "./gradlew clean build"
   - jdk: openjdk11
