@@ -8,7 +8,7 @@ addons:
 #      - msbuild
       - mono-devel
       - mono-xbuild
-before_script: 
+#before_script:
 matrix:
   include:
   - jdk: oraclejdk11
