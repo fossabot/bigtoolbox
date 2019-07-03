@@ -14,7 +14,9 @@ matrix:
   - jdk: oraclejdk11
     script: "./gradlew clean build"
   - jdk: oraclejdk11
-    script: mvn clean install
+    script:
+      - which mono
+      - mvn clean install
     deploy:
     - provider: bintray
       file: bintray_info_maven.JSON
