@@ -40,7 +40,7 @@ matrix:
       file: target/bigtoolbox-*.*.*.jar
       skip_cleanup: true
       on:
-        tags: true
+        tags: false
         repo: IncPlusPlus/bigtoolbox
         branch: hotfix/improve_travis_build_performance
   - jdk: openjdk11
