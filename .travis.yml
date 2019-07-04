@@ -31,6 +31,7 @@ matrix:
       key: "$bintray_key"
       skip_cleanup: true
       on:
+        tags: true
         branch: develop
     - provider: releases
       api_key:
@@ -38,6 +39,7 @@ matrix:
       file: target/bigtoolbox-*.*.*.jar
       skip_cleanup: true
       on:
+        tags: true
         repo: IncPlusPlus/bigtoolbox
         branch: hotfix/improve_travis_build_performance
   - jdk: openjdk11
