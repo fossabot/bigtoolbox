@@ -16,8 +16,12 @@ addons:
 matrix:
   include:
   - jdk: oraclejdk11
+    # See https://github.com/travis-ci/travis-ci/issues/8667
+    install: true
     script: "./gradlew clean build"
   - jdk: oraclejdk11
+    # See https://github.com/travis-ci/travis-ci/issues/8667
+    install: true
     script:
     - mvn clean install
     deploy:
@@ -37,6 +41,10 @@ matrix:
         repo: IncPlusPlus/bigtoolbox
         branch: hotfix/improve_travis_build_performance
   - jdk: openjdk11
+    # See https://github.com/travis-ci/travis-ci/issues/8667
+    install: true
     script: "./gradlew clean build"
   - jdk: openjdk11
+    # See https://github.com/travis-ci/travis-ci/issues/8667
+    install: true
     script: mvn clean install
