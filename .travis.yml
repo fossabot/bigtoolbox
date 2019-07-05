@@ -1,5 +1,8 @@
 dist: xenial
 language: java
+cache:
+  directories:
+    - $HOME/.m2
 env:
 - CLI_VERSION=latest
 addons:
