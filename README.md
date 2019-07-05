@@ -6,9 +6,13 @@
 [![Build Status](https://travis-ci.com/IncPlusPlus/bigtoolbox.svg?branch=master)](https://travis-ci.com/IncPlusPlus/bigtoolbox)
 [![Known Vulnerabilities](https://snyk.io/test/github/IncPlusPlus/bigtoolbox/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/IncPlusPlus/bigtoolbox?targetFile=pom.xml)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/IncPlusPlus/bigtoolbox.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/IncPlusPlus/bigtoolbox/alerts/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FIncPlusPlus%2Fbigtoolbox.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FIncPlusPlus%2Fbigtoolbox?ref=badge_shield)
 # What is this?
 This is a simple library of Java utilities that I made either because I wanted simple ways to do things for projects in college or for my own personal use.
 ## Why?
 I felt like sharing these in case somebody manages to find this repository and is looking for tools that can pull off exactly what they need.
 ## Acknowledgements
 `File1` and `File1Iter` of the IO module use code from [gt4dev](https://github.com/gt4dev)'s [yet-another-tree-structure repository](https://github.com/gt4dev/yet-another-tree-structure) and modifications from [SO](https://stackoverflow.com/a/54338414/1687436). ([See folder](io/src/main/java/io/github/incplusplus/bigtoolbox/io/filesys))
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FIncPlusPlus%2Fbigtoolbox.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FIncPlusPlus%2Fbigtoolbox?ref=badge_large)
