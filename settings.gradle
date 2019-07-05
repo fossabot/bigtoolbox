@@ -3,13 +3,13 @@
  */
 
 rootProject.name = 'bigtoolbox'
-include(':io')
-include(':math')
+//include(':io')
+//include(':math')
 include(':network')
-include(':os')
-include(':assembly')
-project(':io').projectDir = file('io')
-project(':math').projectDir = file('math')
+//include(':os')
+//include(':assembly')
+//project(':io').projectDir = file('io')
+//project(':math').projectDir = file('math')
 project(':network').projectDir = file('network')
-project(':os').projectDir = file('os')
-project(':assembly').projectDir = file('assembly')
+//project(':os').projectDir = file('os')
+//project(':assembly').projectDir = file('assembly')
