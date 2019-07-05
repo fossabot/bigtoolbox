@@ -13,7 +13,6 @@ addons:
       key_url: http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xA6A19B38D3D831EF
     packages:
     - mono-devel
-    - mono-xbuild
     - msbuild
     - libmono-system-runtime-interopservices-runtimeinformation4.0-cil
 matrix:
