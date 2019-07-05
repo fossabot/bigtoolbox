@@ -18,10 +18,6 @@ matrix:
   - jdk: oraclejdk11
     # See https://github.com/travis-ci/travis-ci/issues/8667
     install: true
-    script: "./gradlew clean build"
-  - jdk: oraclejdk11
-    # See https://github.com/travis-ci/travis-ci/issues/8667
-    install: true
     script:
     - mvn clean install
     deploy:
@@ -44,10 +40,6 @@ matrix:
         tags: false
         repo: IncPlusPlus/bigtoolbox
         branch: master
-  - jdk: openjdk11
-    # See https://github.com/travis-ci/travis-ci/issues/8667
-    install: true
-    script: "./gradlew clean build"
   - jdk: openjdk11
     # See https://github.com/travis-ci/travis-ci/issues/8667
     install: true
